@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chap 04 - La tokenomic | WikiChain</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link href="style-chapitre.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Wiki<span>Chain</span></a>
+                <button class="mobile-toggle" aria-label="Menu">☰</button>
+                <div class="nav-links">
+                    <a href="cours-index.html">Cours</a>
+                    <a href="quiz-index.html" class="btn-conn">Quiz</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="progress-track">
+        <div class="progress-fill" id="progressBar"></div>
+    </div>
+
+    <main class="chapter-layout">
+        <div class="breadcrumb">
+            <a href="cours-index.html">Parcours d'apprentissage</a> > <span>Chapitre 04</span>
+        </div>
+
+        <h1 class="chapter-title">Chapitre 04 : <span class="gradient-text">La Tokenomic</span></h1>
+
+        <article class="content">
+
+            <div class="callout callout-warning">
+                <span class="callout-title">📚 Prérequis</span>
+                Avant de commencer à lire ce chapitre, assurez-vous d'avoir déjà bien assimilé les concepts précédents.
+                Ces chapitres constituant les bases de cet écosystème, il en va de votre bonne compréhension.
+            </div>
+
+            <h2>I. La tokenomic, c'est quoi ?</h2>
+
+            <p>Comme pour une monnaie fiduciaire et comme vu précédemment, une cryptomonnaie possède une
+                <strong>supply</strong> et un <strong>Market Cap (MC)</strong>. Ce sont ces informations qui vont
+                drainer le prix de manière positive ou négative.
+            </p>
+
+            <div class="callout">
+                <span class="callout-title">💡 Définition</span>
+                La tokenomic est sûrement la plus importante de toutes car c'est elle qui dirige le niveau de supply et
+                supply max et donc de rareté. La tokenomic n'est rien de plus que le <strong>plan d'émission et de
+                    distribution d'une cryptomonnaie</strong>.
+            </div>
+
+            <h3>a) Inflation et déflation</h3>
+
+            <p>Pour comprendre l'enjeu que représente cette notion, il faut tout particulièrement comprendre le
+                phénomène d'inflation et par extension de déflation.</p>
+
+            <h4>📈 Comprendre l'inflation</h4>
+            <p>Lorsque le prix des marchandises augmente, on parle de prix inflationniste ou d'inflation. En vérité,
+                c'est plus généralement la valeur de la monnaie qui chute que le prix des marchandises qui augmente.</p>
+
+            <div class="callout">
+                <span class="callout-title">🥐 Exemple concret</span>
+                Imaginons que vous voulez acheter un paquet de pâtes à 1€. Si une inflation de 10% arrive, au lieu de
+                vous dire que votre pièce de 1€ vaut maintenant 90 centimes, on va plutôt augmenter le prix du paquet de
+                pâtes de 10% : vous le payerez donc <strong>1,10€</strong>. Pour vous c'est le paquet de pâtes qui a
+                augmenté son prix, alors qu'en vérité, c'est juste l'euro qui aura perdu 10% de sa valeur monétaire.
+            </div>
+
+            <p>Par cette même logique, l'inflation est aussi caractérisée lorsque <strong>la demande excède
+                    l'offre</strong>.</p>
+
+            <h4>📉 Comprendre la déflation</h4>
+            <p>À contrario, une déflation est lorsqu'il y a plus d'offre que de demande, ce qui conduit les vendeurs à
+                revoir leurs prix à la baisse par phénomène de concurrence et d'attractivité.</p>
+
+            <p>La déflation peut aussi apparaître lorsque la banque centrale émettrice de la monnaie décide de retirer
+                une part de la masse monétaire en circulation. Cela apporte un effet de rareté sur la valeur de la
+                monnaie car, moins d'argent en circulation la rend plus rare et donc augmente sa valeur, avec comme
+                dernière conséquence de faire baisser le prix des biens et services.</p>
+
+            <h4>🔗 Application aux cryptomonnaies</h4>
+            <p>Le concept d'inflation est directement lié aux différents phénomènes de distribution de la monnaie. En
+                effet, plus on imprime de la monnaie, plus celle-ci perd de sa rareté et par conséquence de sa valeur.
+                Les cryptomonnaies n'y échappent pas.</p>
+
+            <div class="callout">
+                <span class="callout-title">🧮 Formule du prix d'un token</span>
+                <code>Prix = Market Cap ÷ Supply en circulation</code><br><br>
+                Exemple : Si une cryptomonnaie a une supply de 100 000 tokens et un Market Cap de 1 000 000€, son prix
+                sera de <strong>10€ par token</strong> (1 000 000 / 100 000).
+            </div>
+
+            <p>Plus la supply d'une cryptomonnaie sera haute, plus celle-ci fera baisser la valeur de la crypto.</p>
+
+            <h3>b) Le mécanisme de burn (ou burning)</h3>
+
+            <p>Le mot <em>burn</em> signifie littéralement « brûler » en français. Quel rapport avec nos cryptomonnaies
+                ?</p>
+
+            <p>Précédemment, nous avons évoqué un mécanisme produit par les banques centrales ayant pour but de raréfier
+                l'offre de leur monnaie, afin de réguler l'économie. Ce phénomène n'est en rien exclusif aux monnaies
+                fiduciaires.</p>
+
+            <div class="callout callout-warning">
+                <span class="callout-title">⚠️ La différence fondamentale</span>
+                Pour une monnaie FIAT, c'est la banque centrale qui gouverne sa monnaie et est libre d'en imprimer ou
+                d'en supprimer : c'est une monnaie <strong>centralisée</strong>. Pour les cryptomonnaies, cela est
+                différent car elles tendent vers une <strong>décentralisation</strong>. Aucun bon projet ne peut donc à
+                son bon vouloir ajouter ou supprimer d'unités de tokens.
+            </div>
+
+            <h4>🔥 Comment fonctionne le burn ?</h4>
+            <p>Il faut inclure en amont un mécanisme ou plutôt un algorithme qui viendra réguler l'offre. Mais alors,
+                par quel moyen peut-on réellement impacter la supply, sans supprimer des tokens que possèdent des
+                investisseurs ?</p>
+
+            <p>C'est à cette question que répond la notion de <strong>burning</strong>. Le mécanisme de burn est le
+                système qui va permettre à une cryptomonnaie de raréfier son offre et donc d'être déflationniste.</p>
+
+            <p>Pour se faire sans toucher aux portefeuilles des détenteurs, les développeurs ont eu la bonne idée de
+                s'orienter sur les <strong>frais de transactions</strong> utilisés lors de tout échange. Une partie de
+                ces frais est récupérée afin de les « brûler » (= burn), c'est-à-dire de les détruire définitivement.
+            </p>
+
+            <div class="callout">
+                <span class="callout-title">📊 Effet du burn</span>
+                Plus l'activité sur une blockchain utilisant ce type de mécanisme s'accroît, plus le burn est conséquent
+                et rend donc l'actif de plus en plus rare.
+            </div>
+
+            <p><strong>Blockchains utilisant le burn :</strong> Avalanche, BNB, Ethereum (depuis EIP-1559). À noter que
+                même si toutes ces blockchains utilisent le burn, le fonctionnement de leur système ainsi que les taux
+                de frais brûlés diffèrent, mais la logique reste la même.</p>
+
+
+            <h2>II. La distribution</h2>
+
+            <p>Si vous voulez créer une nouvelle cryptomonnaie, il vous faudra un endroit pour la vendre : une place de
+                marché. Ces places de marché sont appelées <strong>Exchanges</strong>, les plus connues étant Binance et
+                Coinbase.</p>
+
+            <h4>📦 Répartition typique d'une supply</h4>
+            <p>Admettons que vous ayez une supply de 100 tokens. Vous ne pouvez pas envoyer la totalité à un exchange,
+                car vous n'auriez plus de tokens pour financer la suite de votre projet.</p>
+
+            <ul>
+                <li><strong>~20% pour le financement du projet :</strong> Les créateurs gardent toujours une valeur
+                    approximative de 20% de la supply afin de pouvoir s'en servir pour le développement.</li>
+                <li><strong>Part pour rémunérer les validateurs :</strong> Il vous faudra une part non négligeable de
+                    tokens pour pouvoir rémunérer les mineurs (ou validateurs selon le consensus), afin de les
+                    convaincre de sécuriser votre réseau.</li>
+                <li><strong>Part vendue sur les exchanges :</strong> La portion destinée à être vendue aux investisseurs
+                    initiaux.</li>
+                <li><strong>Airdrops :</strong> Lors d'évènements spéciaux, les créateurs peuvent se réserver le droit
+                    de donner des jetons à une partie de la communauté pour les récompenser de leur confiance.</li>
+            </ul>
+
+            <div class="callout">
+                <span class="callout-title">🎯 Les 3 axes de distribution</span>
+                1️⃣ Financement du projet par l'équipe<br>
+                2️⃣ Rémunération des validateurs/miners<br>
+                3️⃣ Vente aux investisseurs sur les exchanges<br><br>
+                Tout ceci est à prendre en compte lorsque vous faites l'étude d'une crypto, car le cours de l'actif sera
+                grandement influencé par cette distribution.
+            </div>
+
+            <h2>III. Signaux d'une mauvaise tokenomic</h2>
+
+            <p>À présent je vais vous donner quelques exemples de cas où la tokenomic constituerait un <strong>mauvais
+                    signal d'investissement</strong>.</p>
+
+            <h3>⚠️ Signal 1 : Rémunération des validateurs mal calibrée</h3>
+
+            <p>Si la tokenomic d'un projet affiche que 30% de la supply sont réservés pour payer les sécurisations du
+                réseau, alors on peut se demander : <em>qu'adviendra-t-il lorsque ces 30% auront été distribués ?</em>
+            </p>
+
+            <div class="callout callout-warning">
+                <span class="callout-title">🚨 Risque majeur</span>
+                Si le projet n'a pas prévu d'alternative, cela voudrait dire qu'au bout d'un certain temps les personnes
+                qui sécurisent le réseau ne seraient plus payées, ce qui entraînerait une fuite massive vers d'autres
+                blockchains. Aucun mineur ou staker n'accepterait de sécuriser le réseau sans rémunération.
+            </div>
+
+            <h3>⚠️ Signal 2 : Vente massive non absorbée par le marché</h3>
+
+            <p>Il faut bien faire attention à la distribution faite pour vendre sur les exchanges. Reprenons notre
+                exemple :</p>
+
+            <div class="callout">
+                <span class="callout-title">📉 Simulation d'impact</span>
+                <strong>Situation initiale :</strong> Market Cap = 1 000 000€, Supply = 100 000 tokens → Prix =
+                <strong>10€/token</strong><br><br>
+                <strong>Scenario :</strong> L'organisation débloque et vend 10 000 tokens supplémentaires.<br>
+                Si ces tokens ne trouvent pas d'acheteurs :<br>
+                • Supply passe à 110 000 tokens<br>
+                • Market Cap reste à 1 000 000€<br>
+                • Nouveau prix : 1 000 000 / 110 000 = <strong>9,09€/token</strong><br><br>
+                👉 <strong>Baisse de ~10% du prix</strong> sans que le projet n'ait perdu de valeur réelle.
+            </div>
+
+            <h3>🔍 Checklist rapide pour analyser une tokenomic</h3>
+            <ul>
+                <li>✅ La supply max est-elle clairement définie et raisonnable ?</li>
+                <li>✅ Le calendrier de déblocage des tokens (vesting) est-il transparent ?</li>
+                <li>✅ La part réservée à l'équipe est-elle raisonnable (< 20-30%) ?</li>
+                <li>✅ Le mécanisme de rémunération des validateurs est-il viable sur le long terme ?</li>
+                <li>✅ Existe-t-il un mécanisme de burn ou de contrôle de l'inflation ?</li>
+                <li>✅ La distribution initiale est-elle équitable ou concentrée entre quelques wallets ?</li>
+            </ul>
+
+            <div class="image-placeholder">
+                <strong>📊 Graphique : Exemple de vesting schedule</strong>
+                <img src="Pics/VestingScheduleImage.png"
+                    alt="Graphique de libération de tokens par les Ventures Capitals"
+                    style="width:100%; border-radius:12px; margin:2rem 0;">
+            </div>
+
+            <div class="callout">
+                <span class="callout-title">💡 En résumé</span>
+                Une bonne tokenomic doit être <strong>équilibrée, transparente et durable</strong>. Elle doit
+                récompenser les participants honnêtes sans créer de pression vendeuse excessive sur le marché. Avant
+                d'investir, étudiez toujours le whitepaper du projet pour comprendre comment les tokens seront émis,
+                distribués et contrôlés dans le temps.
+            </div>
+
+        </article>
+
+        <nav class="chapter-nav">
+            <a href="chapitre-03.html" class="nav-btn">
+                <span class="nav-label">← Chapitre précédent</span>
+                <span class="nav-title">L'interopérabilité</span>
+            </a>
+            <a href="chapitre-05.html" class="nav-btn next">
+                <span class="nav-label">Chapitre suivant →</span>
+                <span class="nav-title">Les NFTs</span>
+            </a>
+        </nav>
+    </main>
+
+    <script>
+        // Barre de progression de lecture
+        window.onscroll = function () {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById("progressBar").style.width = scrolled + "%";
+        };
+
+        // Menu mobile
+        const toggle = document.querySelector('.mobile-toggle');
+        const nav = document.querySelector('.nav-links');
+        if (toggle) toggle.addEventListener('click', () => nav.classList.toggle('active'));
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => nav.classList.remove('active'));
+        });
+    </script>
+</body>
+
+</html>

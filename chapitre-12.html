@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chap 12 - Analyse technique | WikiChain</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link href="style-chapitre.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <nav>
+        <a href="index.html" class="logo">Wiki<span>Chain</span></a>
+        <button class="mobile-toggle" aria-label="Menu">☰</button>
+        <div class="nav-links">
+          <a href="cours-index.html">Cours</a>
+          <a href="quiz-index.html" class="btn-conn">Quiz</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="progress-track">
+    <div class="progress-fill" id="progressBar"></div>
+  </div>
+
+  <main class="chapter-layout">
+    <div class="breadcrumb">
+      <a href="cours-index.html">Parcours d'apprentissage</a> > <span>Chapitre 12</span>
+    </div>
+
+    <h1 class="chapter-title">Chapitre 12 : <span class="gradient-text">Analyse Technique & Psychologie de Marché</span>
+    </h1>
+
+    <article class="content">
+
+      <div class="callout">
+        <span class="callout-title">📊 Introduction</span>
+        Lorsque l'on devient investisseur crypto, il est incontournable de parler de l'étude du cours d'un marché. Le
+        cours d'un marché reste certes imprévisible, néanmoins, il est possible d'en dégager certains axes afin de
+        <strong>prévoir</strong> (et non pas prédire) dans quel sens le marché risque de se diriger.
+      </div>
+
+      <h2>I. Le cours d'un marché : lire les graphiques</h2>
+
+      <p>Pour analyser un actif, on utilise le graphique de son cours. Vous pouvez utiliser le site <a
+          href="https://www.tradingview.com" target="_blank">TradingView</a> afin de trouver les graphiques des cours
+        actuels.</p>
+
+      <h3>🕯️ Comprendre les bougies japonaises</h3>
+
+      <p>Sur ces graphiques, vous retrouverez la valeur monétaire en ordonnée et l'échelle de temps en abscisse. Au
+        centre, on trouve ce qu'on appelle des <strong>bougies</strong>, de couleur verte ou rouge, qui définissent les
+        divers mouvements ayant eu lieu.</p>
+
+      <div class="candle-container">
+        <div class="candle">
+          <span class="candle-label">Bougie Verte 🟢</span>
+          <div class="candle-body bull" style="height:40px;">
+            <div class="candle-wick top"></div>
+            <div class="candle-wick bottom"></div>
+          </div>
+          <span style="font-size:0.8rem; margin-top:8px; color:var(--bull);">Hausse</span>
+        </div>
+        <div class="candle">
+          <span class="candle-label">Bougie Rouge 🔴</span>
+          <div class="candle-body bear" style="height:40px;">
+            <div class="candle-wick top"></div>
+            <div class="candle-wick bottom"></div>
+          </div>
+          <span style="font-size:0.8rem; margin-top:8px; color:var(--bear);">Baisse</span>
+        </div>
+      </div>
+
+      <ul>
+        <li><strong>Bougie verte :</strong> Traduit une augmentation du prix sur la période</li>
+        <li><strong>Bougie rouge :</strong> Traduit une dévalorisation de l'actif sur la période</li>
+      </ul>
+
+      <div class="callout">
+        <span class="callout-title">📈 Vocabulaire trader</span>
+        • <strong>Pump vers le Nord :</strong> Quand une crypto explose à la hausse (grosses bougies vertes)<br>
+        • <strong>Dump vers le Sud :</strong> Quand une crypto chute brutalement (grosses bougies rouges)
+      </div>
+
+      <h4>⏱️ Unités de temps et cycles des bougies</h4>
+      <p>Si sur un graphique on choisit une unité de temps d'un jour, alors chaque bougie sera la variation contenue
+        dans une journée :</p>
+      <ul>
+        <li><strong>Ouverture :</strong> Moment où une nouvelle bougie se crée (ex: 00:00 pour du journalier)</li>
+        <li><strong>Clôture :</strong> Moment de fin de cette bougie (ex: 23:59 pour du journalier)</li>
+      </ul>
+
+      <div class="callout callout-warning">
+        <span class="callout-title">🔍 Les mèches : informations cruciales</span>
+        Certaines bougies possèdent une fine ligne en dessous ou au-dessus : ce sont les <strong>mèches</strong>. Elles
+        représentent jusqu'où le prix est monté ou descendu <em>sans pour autant avoir clôturé à ce niveau</em>.<br><br>
+        <strong>Exemple :</strong> Une bougie avec une longue mèche basse à 42 500$ mais clôturant à 50 000$ signifie
+        que le prix a testé 42 500$ dans la journée avant de remonter. Cette information révèle une pression acheteuse
+        qui a repoussé les vendeurs.
+      </div>
+
+      <h4>🔄 Changer d'unité de temps</h4>
+      <p>Il est important lors d'étude du cours, de varier l'échelle de temps afin d'obtenir des informations sur le
+        court, moyen et long terme.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Unité de temps</th>
+            <th>Usage recommandé</th>
+            <th>Nombre de bougies/jour</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1min - 15min</td>
+            <td>Scalping, trading très court terme</td>
+            <td>1 440 - 96</td>
+          </tr>
+          <tr>
+            <td>1h - 4h</td>
+            <td>Swing trading, analyse intra-jour</td>
+            <td>24 - 6</td>
+          </tr>
+          <tr>
+            <td>1 jour</td>
+            <td>Investissement moyen/long terme</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>1 semaine - 1 mois</td>
+            <td>Analyse macro, tendance de fond</td>
+            <td>0,14 - 0,03</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>II. Les principaux termes de l'analyse technique et chartisme</h2>
+
+      <h3>a) Structure de base du chartisme</h3>
+
+      <div class="callout">
+        <span class="callout-title">📐 Définition du Chartisme</span>
+        L'analyse technique consiste en l'étude de différents <strong>patterns récurrents</strong>, auxquels on associe
+        un mouvement ou en tout cas une probabilité de mouvement. Concrètement : lorsque le graphique dessine une
+        certaine figure, cela nous donne une indication probable de ce qu'il va se dérouler par la suite.
+      </div>
+
+      <p>La <strong>charte</strong>, en cryptomonnaie, correspond aux graphiques du cours que l'on suit. La capture
+        précédente montrant le graphique du Bitcoin est donc ce que l'on appelle plus communément <em>la charte du
+          Bitcoin</em>.</p>
+
+      <h4>🏔️ ATH (All Time High)</h4>
+      <p>Le point le plus haut qu'un cours atteint est appelé <strong>ATH</strong> (<em>All Time High</em>). Pour le
+        Bitcoin, son ATH est de 69 000$ et a été atteint au cours du mois de Novembre 2021.</p>
+
+      <div class="callout callout-warning">
+        <span class="callout-title">⚠️ Ne jamais acheter à l'ATH</span>
+        Il n'est jamais intéressant de se positionner sur un marché qui vient d'atteindre son point le plus haut. Cela
+        signifie qu'il est <strong>trop tard</strong> pour rentrer sur ce marché.<br><br>
+        Si vous aviez acheté du Bitcoin à son ATH de 69 000$, vous seriez aujourd'hui en perte sèche de ~50% de votre
+        investissement.
+      </div>
+
+      <h4>🎯 Signaux d'achat et de vente</h4>
+      <p>Lorsque l'on souhaite investir, il faut repérer des signaux :</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Type de signal</th>
+            <th>Condition</th>
+            <th>Interprétation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Signal d'achat</strong></td>
+            <td>Signes de retournement de tendance baissière</td>
+            <td>Le marché pourrait repartir à la hausse</td>
+          </tr>
+          <tr>
+            <td><strong>Signal de vente</strong></td>
+            <td>Signes de retournement de tendance haussière</td>
+            <td>Le marché pourrait corriger ou baisser</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="callout">
+        <span class="callout-title">📉 Pourquoi un nouvel ATH est un signal de vente ?</span>
+        Un asset qui brise son ATH (fait un nouveau plus haut) est un fort signal de vente car une énorme hausse
+        entraîne ce qu'on appelle une <strong>correction</strong>. Les investisseurs ayant pris position lorsque l'actif
+        n'avait pas encore explosé ont de fortes raisons de vendre pour prendre des profits, créant une pression
+        vendeuse.
+      </div>
+
+      <h4>🧱 Support et Résistance</h4>
+
+      <p>Lorsque l'on observe que le cours d'un asset semble rebondir sur un certain niveau, on parle de support ou de
+        résistance.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Niveau</th>
+            <th>Définition</th>
+            <th>Signal lors de la cassure</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Support</strong> 🟢</td>
+            <td>Niveau sur lequel le cours, quand il baisse, rebondit pour remonter</td>
+            <td>Si cassé à la baisse → Signal de vente (chute vers le prochain support)</td>
+          </tr>
+          <tr>
+            <td><strong>Résistance</strong> 🔴</td>
+            <td>Niveau sur lequel le cours, quand il monte, rebondit pour redescendre</td>
+            <td>Si cassé à la hausse → Signal d'achat (breakout = injection de capitaux)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="callout">
+        <span class="callout-title">🔄 Inversion Support/Résistance</span>
+        • Une fois la résistance brisée à la hausse (<em>breakout</em>), celle-ci devient <strong>support</strong><br>
+        • Un support qui se ferait briser à la baisse devient une <strong>résistance</strong> par la suite
+      </div>
+
+      <h4>📦 Range / Canal</h4>
+      <p>Quand le cours rebondit 3 fois sur un même support et sur une même résistance, on parle de
+        <strong>range</strong> ou de <strong>canal</strong>. Le prix oscille entre deux bornes bien définies.</p>
+
+
+      <h3>b) Figures chartistes principales</h3>
+
+      <p>Il existe une multitude de figures chartistes. Voici les 3 plus importantes à connaître :</p>
+
+      <h4>🍵 1. La Tasse avec Anse (Cup and Handle)</h4>
+      <p>Figure de <strong>retournement de tendance baissière</strong> qui ressemble, comme son nom le laisse supposer,
+        à une tasse avec une anse.</p>
+
+      <div class="callout callout-bull">
+        <span class="callout-title">🎯 Interprétation</span>
+        Si la cassure de la résistance (formant les points hauts de la tasse et de l'anse) est brisée, alors il est
+        probable que le cours augmente de <strong>la taille de la profondeur de la tasse</strong>.
+      </div>
+
+
+      <div class="callout callout-warning">
+        <span class="callout-title">⚠️ Probabilité, pas certitude</span>
+        Le chartisme n'est en rien une science exacte. Le cours aurait très bien pu soit ne pas breaker, soit breaker
+        puis rechuter juste derrière. Cela nous donne un <em>indice</em> sur la tendance à venir, pas une garantie.
+      </div>
+
+      <h4>👤 2. L'Épaule-Tête-Épaule (Head and Shoulders)</h4>
+      <p>Figure de <strong>retournement de tendance haussière</strong>. Si cette figure se dessine et se confirme, alors
+        on observera une baisse correspondante au report de la totalité de la hauteur de la tête.</p>
+
+      <div class="callout callout-bear">
+        <span class="callout-title">🎯 Structure de la figure</span>
+        • <strong>Épaule gauche :</strong> Premier pic modéré<br>
+        • <strong>Tête :</strong> Pic central plus haut que les épaules<br>
+        • <strong>Épaule droite :</strong> Troisième pic modéré, similaire à l'épaule gauche<br>
+        • <strong>Ligne de cou :</strong> Support reliant les creux entre les pics
+      </div>
+
+
+      <h4>🔁 3. Le Double/Triple Top ou Bottom</h4>
+      <p>Figures de retournement où le prix teste deux ou trois fois un même niveau avant de s'inverser :</p>
+      <ul>
+        <li><strong>Double/Triple Top :</strong> Signal de vente après échecs répétés de casser une résistance</li>
+        <li><strong>Double/Triple Bottom :</strong> Signal d'achat après échecs répétés de casser un support</li>
+      </ul>
+
+      <h3>B) Fake Out : les fausses cassures</h3>
+
+      <div class="callout callout-warning">
+        <span class="callout-title">⚠️ Le piège des faux signaux</span>
+        Certaines fois les patterns observés sont trompeurs. Même s'ils ont bel et bien été identifiés correctement,
+        leur réalisation reste une probabilité. Lorsque l'on observe un pattern mais que celui-ci ne se réalise pas, on
+        parle de <strong>fausse cassure</strong> ou <em>fake out</em>, ainsi que de <em>pull back</em>.
+      </div>
+
+      <h4>🐋 Whales et Smart Money</h4>
+      <p>Le marché des cryptomonnaies est régi par les détenteurs de l'actif. S'il y a plus d'acheteurs que de vendeurs,
+        le prix monte ; inversement, s'il y a plus de vendeurs, le prix baisse.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Acteur</th>
+            <th>Profil</th>
+            <th>Impact sur le marché</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Whales</strong> 🐋</td>
+            <td>Investisseurs avec un capital considérable</td>
+            <td>Peuvent manipuler temporairement le cours par des ordres massifs</td>
+          </tr>
+          <tr>
+            <td><strong>Smart Money</strong> 🧠</td>
+            <td>Institutions et fonds avec traders aguerris</td>
+            <td>S'opposent aux particuliers non formés, profitent de leurs erreurs</td>
+          </tr>
+          <tr>
+            <td><strong>Particuliers</strong> 👤</td>
+            <td>Investisseurs individuels comme vous et moi</td>
+            <td>Souvent victimes de FOMO/FUD, entrent/sortent au mauvais moment</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="callout">
+        <span class="callout-title">💡 Comment anticiper la Smart Money ?</span>
+        Si demain vous appreniez qu'un grand groupe financier allait prochainement commencer à investir dans les
+        cryptomonnaies, vous pourriez presque à coup sûr en déduire qu'une <strong>baisse conséquente</strong> sera
+        observée dans les prochains jours, afin de leur permettre de se placer sur le marché au meilleur prix.
+      </div>
+
+      <div class="callout callout-warning">
+        <span class="callout-title">🛡️ Règle d'or</span>
+        Faites toujours attention lorsque vous voulez vous servir du chartisme. Comme toujours dans l'investissement, il
+        vous faudra être prudent et <strong>ne jamais all-in</strong> sur de simples signaux chartistes.
+      </div>
+
+      <h2>III. Le marché de la cryptomonnaie : un marché psychologique</h2>
+
+      <p>Quand vous vous intéressez à une nouvelle crypto sur laquelle investir, il est donc important d'analyser sa
+        charte. Seulement, puisque le marché est constitué d'investisseurs comme vous, cela en fait un <strong>marché
+          psychologique</strong>, où certains leviers mentaux peuvent prendre le pas sur vos décisions rationnelles.</p>
+
+      <h3>😰 Panic Sell & Panic Buy</h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Phénomène</th>
+            <th>Déclencheur</th>
+            <th>Conséquence</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Panic Buy</strong> 🟢➡️🔴</td>
+            <td>Forte hausse + peur de rater l'opportunité</td>
+            <td>Achat à l'ATH ou près du sommet → risque de correction immédiate</td>
+          </tr>
+          <tr>
+            <td><strong>Panic Sell</strong> 🔴➡️🟢</td>
+            <td>Début de correction + peur de perdre son capital</td>
+            <td>Vente au plus bas → réalisation de pertes évitables</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="callout callout-warning">
+        <span class="callout-title">⚠️ Le piège émotionnel</span>
+        Il ne faut pas réagir de façon émotionnelle sur les marchés, mais rester le plus <strong>rationnel et
+          pragmatique</strong> possible. Les notions de panic sell et panic buy sont entièrement corrélées à ce que l'on
+        appelle le FOMO et le FUD.
+      </div>
+
+      <h3>🎭 FOMO vs FUD</h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Acronyme</th>
+            <th>Signification</th>
+            <th>Effet sur l'investisseur</th>
+            <th>Conseil</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>FOMO</strong><br><em>Fear Of Missing Out</em></td>
+            <td>Peur de rater une opportunité</td>
+            <td>Pousse à acheter sur la hype, souvent au plus haut</td>
+            <td>❌ Ne pas suivre la foule aveuglément</td>
+          </tr>
+          <tr>
+            <td><strong>FUD</strong><br><em>Fear, Uncertainty, Doubt</em></td>
+            <td>Peur, Incertitude, Doute</td>
+            <td>Pousse à vendre sur des rumeurs négatives, souvent au plus bas</td>
+            <td>❌ Ne pas paniquer sur des infos non vérifiées</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="callout">
+        <span class="callout-title">🧭 Règle de survie</span>
+        N'écoutez jamais les personnes sur les réseaux sociaux. Faites vos propres recherches, vos analyses et n'ayez
+        confiance qu'en <strong>vous-même</strong>.
+      </div>
+
+      <h3>🗞️ "Buy the rumor, sell the news"</h3>
+
+      <p>Pour acheter bas afin de revendre haut, on utilise souvent la fameuse phrase :</p>
+
+      <pre><code>"Buy the rumor, sell the news"
+→ "Achète la rumeur, vends la nouvelle"</code></pre>
+
+      <div class="callout callout-bull">
+        <span class="callout-title">💡 Application concrète</span>
+        Si vous avez entendu dire de source sûre qu'Ethereum est sur la bonne voie pour résoudre le trilemme des
+        blockchains, il est super intéressant de se positionner sur Ethereum <strong>avant</strong> l'annonce
+        officielle.<br><br>
+        Une fois la nouvelle annoncée, tout le monde voudra se positionner → le cours monte fortement → si vous vous
+        êtes positionné avant tout le monde, c'est vous qui engendrerez le plus de profits en vendant votre position au
+        top de cette hausse.
+      </div>
+
+      <h2>IV. Checklist : Analyser un actif avant d'investir</h2>
+
+      <div class="callout">
+        <span class="callout-title">✅ Avant d'acheter, posez-vous ces questions</span>
+        <ol style="margin-top:10px; margin-left:20px;">
+          <li><strong>Charte :</strong> Suis-je proche d'un ATH ? Y a-t-il un support proche pour placer mon stop-loss ?
+          </li>
+          <li><strong>Volume :</strong> La hausse/baisse est-elle accompagnée de volume (signe de conviction) ?</li>
+          <li><strong>Contexte :</strong> Sommes-nous en bull run ou bear market ? La tendance de fond est-elle
+            favorable ?</li>
+          <li><strong>Psychologie :</strong> Est-ce que j'achète par FOMO ou par analyse rationnelle ?</li>
+          <li><strong>Risque :</strong> Quelle est la perte maximale que je suis prêt à accepter sur ce trade ?</li>
+          <li><strong>Source :</strong> L'information qui motive mon achat est-elle vérifiée ou juste une rumeur ?</li>
+        </ol>
+      </div>
+
+      <div class="callout">
+        <span class="callout-title">🎯 En résumé</span>
+        • L'analyse technique est un <strong>outil de probabilité</strong>, pas de prédiction<br>
+        • Les supports/résistances et figures chartistes donnent des <em>indices</em>, pas des certitudes<br>
+        • La psychologie de marché (FOMO/FUD) est souvent plus puissante que la technique<br>
+        • La Smart Money profite des erreurs émotionnelles des particuliers<br>
+        • <strong>"Buy the rumor, sell the news"</strong> : anticipez, ne suivez pas<br><br>
+        <strong>Le meilleur indicateur reste votre discipline.</strong>
+      </div>
+
+    </article>
+
+    <nav class="chapter-nav">
+      <a href="chapitre-11.html" class="nav-btn">
+        <span class="nav-label">← Chapitre précédent</span>
+        <span class="nav-title">Cycles du marché</span>
+      </a>
+      <a href="chapitre-13.html" class="nav-btn next">
+        <span class="nav-label">Chapitre suivant →</span>
+        <span class="nav-title">Sécuriser ses crypto-actifs</span>
+      </a>
+    </nav>
+  </main>
+
+  <script>
+    // Barre de progression de lecture
+    window.onscroll = function () {
+      const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      document.getElementById("progressBar").style.width = scrolled + "%";
+    };
+
+    // Menu mobile
+    const toggle = document.querySelector('.mobile-toggle');
+    const nav = document.querySelector('.nav-links');
+    if (toggle) toggle.addEventListener('click', () => nav.classList.toggle('active'));
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => nav.classList.remove('active'));
+    });
+  </script>
+</body>
+
+</html>

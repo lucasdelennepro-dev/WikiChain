@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chap 08 - DAOs | WikiChain</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link href="style-chapitre.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Wiki<span>Chain</span></a>
+                <button class="mobile-toggle" aria-label="Menu">☰</button>
+                <div class="nav-links">
+                    <a href="cours-index.html">Cours</a>
+                    <a href="quiz-index.html" class="btn-conn">Quiz</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="progress-track">
+        <div class="progress-fill" id="progressBar"></div>
+    </div>
+
+    <main class="chapter-layout">
+        <div class="breadcrumb">
+            <a href="cours-index.html">Parcours d'apprentissage</a> > <span>Chapitre 08</span>
+        </div>
+
+        <h1 class="chapter-title">Chapitre 08 : <span class="gradient-text">Les DAOs</span></h1>
+
+        <article class="content">
+
+            <div class="callout">
+                <span class="callout-title">🏛️ Définition</span>
+                Les <strong>DAOs</strong> (<em>Decentralized Autonomous Organizations</em>) ou <strong>Organisations
+                    Autonomes Décentralisées</strong> en français, désignent des organisations privées dont le
+                fonctionnement a pour but une complète décentralisation et autonomie.
+            </div>
+
+            <h2>I. Comment fonctionne une DAO ?</h2>
+
+            <p>Ce type d'organisations utilise la <strong>blockchain</strong> ainsi que les <strong>smart
+                    contracts</strong>, afin d'inscrire clairement les différentes notions du fonctionnement de leur
+                système.</p>
+
+            <h3>🔗 Blockchain : transparence et immuabilité</h3>
+            <p>Puisque les règles de fonctionnement sont inscrites sur une blockchain, elles :</p>
+            <ul>
+                <li>Ne peuvent être modifiées unilatéralement</li>
+                <li>Sont totalement transparentes et consultables par tous</li>
+                <li>Garantissent une exécution fidèle des engagements</li>
+            </ul>
+
+            <h3>🤖 Smart contracts : automatisation totale</h3>
+            <p>Les smart contracts rendent ces organisations totalement automatisées car ceux-ci se contenteront de
+                faire ce pour quoi ils ont été programmés, <strong>sans une quelconque intervention humaine</strong>.
+            </p>
+
+            <div class="callout">
+                <span class="callout-title">⚙️ Exemple concret</span>
+                Un smart contract peut automatiquement :<br>
+                • Distribuer des récompenses aux contributeurs<br>
+                • Exécuter un vote et appliquer la décision gagnante<br>
+                • Libérer des fonds lorsque certaines conditions sont remplies<br><br>
+                Tout cela sans qu'un administrateur humain n'ait à intervenir.
+            </div>
+
+            <h3>🗳️ Gouvernance : le pouvoir aux utilisateurs</h3>
+            <p>Certaines notions de développement peuvent quand même être modifiées afin d'optimiser au mieux le projet
+                pour les utilisateurs. On utilise alors un <strong>système de vote</strong> pour gérer les décisions.
+            </p>
+
+            <div class="callout">
+                <span class="callout-title">🪙 Tokens de gouvernance</span>
+                Les possesseurs du token d'une DAO ont un droit de vote et peuvent donc exprimer leur avis sur
+                l'avancement du projet. Il faut alors voir ces tokens comme des <strong>parts de
+                    l'organisation</strong>. Les tokens relatifs au fonctionnement d'une DAO sont ce que l'on appelle
+                des <strong>tokens de gouvernance</strong>.
+            </div>
+
+            <div class="image-placeholder">
+                <strong>🗳️ Schéma : Fonctionnement d'une DAO</strong>
+                <img src="Pics/organisation-autonome-decentralisee.jpg" alt="Organisation d'une DAO. "
+                    style="width:100%; border-radius:12px; margin:2rem 0;">
+            </div>
+
+            <h2>II. DAO vs Entreprise centralisée</h2>
+
+            <p>Cette notion est une des principales à comprendre, afin de saisir le total changement qu'apportent les
+                projets décentralisés vis-à-vis des grands groupes actuels.</p>
+
+            <h3>🏢 Le modèle traditionnel</h3>
+            <p>Les entreprises centralisées sont totalement maîtres de leurs entreprises et n'ont que faire d'établir
+                des règles transparentes et immuables tant que les utilisateurs utilisent leurs produits.</p>
+
+            <h3>🌐 Le modèle DAO</h3>
+            <p>Ainsi, l'entreprise est beaucoup plus axée sur l'aspect utilisateur, ce qui la rend plus attractive et
+                complète qu'une entreprise centralisée seulement intéressée par les bénéfices de leurs actionnaires.</p>
+
+            <div class="callout">
+                <span class="callout-title">⚖️ Comparaison rapide</span>
+                <table style="width:100%; border-collapse:collapse; margin-top:10px;">
+                    <tr style="border-bottom:1px solid var(--border-glass);">
+                        <td style="padding:8px 0;"><strong>Entreprise centralisée</strong></td>
+                        <td style="padding:8px 0;"><strong>DAO</strong></td>
+                    </tr>
+                    <tr style="border-bottom:1px solid var(--border-glass);">
+                        <td style="padding:8px 0;">Décisions par la direction</td>
+                        <td style="padding:8px 0;">Décisions par vote communautaire</td>
+                    </tr>
+                    <tr style="border-bottom:1px solid var(--border-glass);">
+                        <td style="padding:8px 0;">Règles opaques, modifiables</td>
+                        <td style="padding:8px 0;">Règles transparentes, immuables</td>
+                    </tr>
+                    <tr style="border-bottom:1px solid var(--border-glass);">
+                        <td style="padding:8px 0;">Priorité : actionnaires</td>
+                        <td style="padding:8px 0;">Priorité : utilisateurs</td>
+                    </tr>
+                    <tr>
+                        <td style="padding:8px 0;">Intermédiaires humains</td>
+                        <td style="padding:8px 0;">Automatisation via smart contracts</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h2>III. Les atouts des DAOs</h2>
+
+            <p>Le principal atout de ce type d'organisations est donc le côté <strong>user-fonctionnel</strong>, qui
+                permet :</p>
+
+            <ul>
+                <li><strong>Une plus grande flexibilité</strong> vis-à-vis du développement : les utilisateurs peuvent
+                    proposer et voter des améliorations directement.</li>
+                <li><strong>Un rendu propice aux attentes des clients</strong> : puisque ce sont les utilisateurs qui
+                    décident de la direction du projet, les produits tendent naturellement à mieux répondre à leurs
+                    besoins.</li>
+                <li><strong>Une confiance accrue</strong> : la transparence des règles et l'immutabilité des engagements
+                    réduisent les risques d'abus ou de changements unilatéraux.</li>
+                <li><strong>Une participation récompensée</strong> : les contributeurs actifs peuvent être rémunérés en
+                    tokens de gouvernance, alignant les intérêts de tous.</li>
+            </ul>
+
+            <div class="callout callout-warning">
+                <span class="callout-title">⚠️ Nuance importante</span>
+                L'écosystème des cryptomonnaies se basant principalement sur la décentralisation, la plupart des actifs
+                tendent donc vers le fonctionnement des DAOs. Cependant, <strong>la plupart gardent une part de
+                    centralisation</strong> pour tout ce qui est fonctionnement purement interne (développement
+                technique, sécurité urgente, conformité légale...). Une DAO 100% décentralisée reste un idéal plus
+                qu'une réalité actuelle.
+            </div>
+
+            <h2>IV. Exemples de DAOs notables</h2>
+
+            <p>Bien que votre texte ne cite pas d'exemples spécifiques, voici quelques DAOs emblématiques pour illustrer
+                le concept :</p>
+
+            <h4>🦦 Uniswap DAO</h4>
+            <p>Le protocole d'échange décentralisé Uniswap est gouverné par les détenteurs du token
+                <strong>UNI</strong>, qui votent sur les mises à jour du protocole, la répartition des frais, et les
+                subventions aux développeurs.
+            </p>
+
+            <h4>🏛️ MakerDAO</h4>
+            <p>Organisation derrière le stablecoin <strong>DAI</strong>. Les détenteurs du token <strong>MKR</strong>
+                votent sur les paramètres de stabilité, les types de collatéral acceptés, et les taux d'intérêt.</p>
+
+            <h4>🎨 ConstitutionDAO</h4>
+            <p>DAO éphémère créée en 2021 pour tenter d'acheter une copie originale de la Constitution américaine. Bien
+                que l'achat n'ait pas abouti, ce projet a démontré la puissance de la coordination décentralisée à
+                grande échelle.</p>
+
+            <div class="callout">
+                <span class="callout-title">💡 À retenir</span>
+                Les DAOs représentent un nouveau paradigme organisationnel : <strong>la gouvernance par le code et la
+                    communauté</strong>, plutôt que par une hiérarchie centrale. Bien que le modèle soit encore en
+                maturation, il ouvre la voie à des organisations plus transparentes, résilientes et alignées avec les
+                intérêts de leurs utilisateurs.
+            </div>
+
+        </article>
+
+        <nav class="chapter-nav">
+            <a href="chapitre-07.html" class="nav-btn">
+                <span class="nav-label">← Chapitre précédent</span>
+                <span class="nav-title">Métaverses & Web 3.0</span>
+            </a>
+            <a href="chapitre-09.html" class="nav-btn next">
+                <span class="nav-label">Chapitre suivant →</span>
+                <span class="nav-title">Les roadmaps</span>
+            </a>
+        </nav>
+    </main>
+
+    <script>
+        // Barre de progression de lecture
+        window.onscroll = function () {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById("progressBar").style.width = scrolled + "%";
+        };
+
+        // Menu mobile
+        const toggle = document.querySelector('.mobile-toggle');
+        const nav = document.querySelector('.nav-links');
+        if (toggle) toggle.addEventListener('click', () => nav.classList.toggle('active'));
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => nav.classList.remove('active'));
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chap 01 - Les cryptomonnaies | WikiChain</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link href="style-chapitre.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <nav>
+        <a href="index.html" class="logo">Wiki<span>Chain</span></a>
+        <button class="mobile-toggle" aria-label="Menu">☰</button>
+        <div class="nav-links">
+          <a href="cours-index.html">Cours</a>
+          <a href="quiz-index.html" class="btn-conn">Quiz</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="progress-track">
+    <div class="progress-fill" id="progressBar"></div>
+  </div>
+
+  <main class="chapter-layout">
+    <div class="breadcrumb">
+      <a href="cours-index.html">Parcours d'apprentissage</a> > <span>Chapitre 01</span>
+    </div>
+
+    <h1 class="chapter-title">Chapitre 01 : <span class="gradient-text">Les cryptomonnaies</span></h1>
+
+    <article class="content">
+
+      <h2>I. Les cryptomonnaies, c'est quoi ?</h2>
+
+      <p>Les cryptomonnaies sont une nouvelle forme de monnaie numérique. Bien qu'étant en tout point une révolution
+        dans le système monétaire et financier, elles demeurent pour le moins encore peu connues du grand public.</p>
+
+      <p>La plupart des cryptomonnaies sont totalement indépendantes des monnaies fiduciaires (monnaies d'États telles
+        que le dollar ou l'euro) et par extension, des banques centrales. En effet, la révolution qu'apportent les
+        cryptomonnaies réside dans le fait que, lors d'une transaction, on se passe de <strong>tiers de
+          confiance</strong> tels que les banques.</p>
+
+      <p>Si aujourd'hui vous voulez envoyer de l'argent à un ami, et bien c'est en réalité la banque qui s'en chargera,
+        vous déléguez de ce fait la confiance de vos fonds, et dans ce cas de votre échange, à une entreprise. Lorsque
+        l'on souhaite envoyer de la cryptomonnaie à une autre personne, aucune banque n'entre en jeu dans la
+        transaction, on assiste donc à un échange de valeur monétaire directement de particulier à particulier, ou plus
+        précisément de <strong>pair à pair (peer-to-peer)</strong>.</p>
+
+      <p>Les monnaies fiduciaires, à contrario, nécessitent l'engagement d'un tiers de confiance, dès lors que la
+        transaction est numérique. En effet, on peut aisément payer de particulier à particulier avec de l'argent
+        liquide, mais cela reste extrêmement restrictif à partir d'une certaine somme.</p>
+
+      <div class="callout">
+        <span class="callout-title">📊 Chiffres clés</span>
+        En 2021, on comptait <strong>3,3% de français</strong> détenant de la cryptomonnaie et <strong>2,3% dans le
+          monde</strong>. De manière générale, beaucoup d'analystes comparent la courbe d'adoption des cryptomonnaies à
+        celle d'internet au début des années 2000.
+      </div>
+
+      <p>Si l'on compare les deux courbes, on se rend compte qu'elles sont presque identiques. Cela nous donne un
+        précieux indice quant à l'adoption de cette technologie par la population. On peut aisément dire que plus des
+        personnes utilisent une nouvelle technologie, plus celle-ci est révolutionnaire car utile. Ce qui semble être le
+        cas des cryptomonnaies.</p>
+
+      <div class="image-placeholder">
+        <strong>📈 Graphique : Courbe d'adoption Bitcoin vs Internet</strong>
+        <img src="Pics/AdoptionBTCvsInternet.PNG"
+          alt="Graphique TradingView du BTC avec annotation des bougies et mèches"
+          style="width:100%; border-radius:12px; margin:2rem 0;">
+      </div>
+
+      <p>Même si les cryptomonnaies ont, pour l'heure, peu d'utilité et d'intérêt pour le grand public, il n'en est pas
+        moins que ces monnaies représentent le futur, que ce soit dans le monde du paiement, de l'actif numérique, ou
+        bien même du futur d'internet que l'on nomme <strong>Web 3.0</strong>.</p>
+
+      <p>Vous pouvez retrouver l'ensemble des cryptomonnaies, leur cours actuel ainsi que leur classement par
+        capitalisation dans le marché, sur les sites <a href="https://www.coinmarketcap.com"
+          target="_blank">www.coinmarketcap.com</a> ou <a href="https://www.coingecko.com"
+          target="_blank">www.coingecko.com</a>.</p>
+
+      <h3>🔑 Vocabulaire technique essentiel</h3>
+      <p>D'un point de vue plus technique, chaque cryptomonnaie se compose de pièces de monnaie que l'on appelle des
+        <strong>tokens</strong> (jetons en français). Voici les termes à connaître :
+      </p>
+
+      <ul>
+        <li><strong>Supply :</strong> Le nombre de pièces de monnaie disponibles actuellement, donc la masse totale de
+          token en circulation sur le marché. Par exemple, la supply du Bitcoin est d'environ 19 millions à l'heure
+          actuelle.</li>
+        <li><strong>Supply max :</strong> Une monnaie peut avoir une limite maximum de tokens, c'est-à-dire qu'à partir
+          d'un certain seuil de tokens émis, il ne sera plus possible d'en créer de nouveaux.</li>
+        <li><strong>Symbole monétaire :</strong> Comme toutes monnaies, les cryptomonnaies ont un symbole composé de 3 à
+          4 lettres majuscules. Le symbole du Bitcoin est <strong>BTC</strong>.</li>
+        <li><strong>Market Cap (Capitalisation) :</strong> La totalité des fonds investis sur une cryptomonnaie. C'est
+          par le biais de cette capitalisation que l'on classe les cryptomonnaies. Par exemple, le market cap du Bitcoin
+          à son ATH était d'environ 1 330 000 000 000$.</li>
+      </ul>
+
+      <h2>II. Petite histoire du Bitcoin : Son but et son fonctionnement primaire</h2>
+
+      <p>Précédemment, j'évoquais les cryptomonnaies comme étant une révolution dans plusieurs domaines distincts. Afin
+        de vous expliquer les aspects révolutionnaires de cette technologie, je ne peux trouver de meilleur exemple que
+        celui du <strong>Bitcoin</strong>.</p>
+
+      <p>Bitcoin est la première vraie cryptomonnaie jamais créée, bien que d'autres monnaies numériques existaient
+        avant elle, notamment BitGold ou B-Money. On ne connaît pas la réelle identité du, ou des, créateur(s) du
+        Bitcoin, tout ce que l'on sait se résume au pseudonyme laissé dans le <em>White Paper</em> (feuille explicative
+        sur le fonctionnement et les aspirations d'une technologie), qu'il aurait rédigé et échangé sur des forums en
+        ligne sur lesquels il utilisait aussi ce même nom d'emprunt. Ce pseudo c'est <strong>Satoshi Nakamoto</strong>.
+      </p>
+
+      <div class="callout callout-warning">
+        <span class="callout-title">⚠️ Note</span>
+        Certains ont prétendu être ce fameux Satoshi mais sans jamais pouvoir en apporter la preuve incontestable.
+        D'autres évoquent même le Bitcoin comme projet directement dirigé et créé par la CIA. Connaître l'identité de
+        son créateur n'est pas important en soi : focalisons-nous sur la technologie.
+      </div>
+
+      <p>Pour fonctionner, le Bitcoin se sert d'une technologie assez peu connue du temps de sa création, mais qu'il a
+        par la suite fortement contribué à faire connaître : il s'agit de la <strong>blockchain</strong>. La blockchain
+        étant le cœur d'une cryptomonnaie, nous verrons plus en détail ce que c'est dans le prochain chapitre. Retenez
+        juste qu'il s'agit là du réseau utilisé par une cryptomonnaie afin d'enregistrer et d'encrypter les données
+        produites par les différentes transactions et qui permet de vérifier leur vraisemblance.</p>
+
+      <h3>💡 Pourquoi le Bitcoin a-t-il été créé ?</h3>
+      <p>Bon c'est bien beau tout ça, mais Bitcoin ça sert à quoi ? Grâce au White Paper du Bitcoin rédigé par son
+        créateur, on apprend que l'idée de sa création fut en premier lieu la conséquence de la <strong>crise financière
+          de 2008</strong>.</p>
+
+      <p>En effet, les monnaies d'États aussi appelées monnaies FIAT ou encore monnaies fiduciaires, évoluant dans un
+        écosystème complexe, pour le moins opaque et méconnu de la plupart des gens en dehors des cercles financiers,
+        leur gestion est très délicate et assez difficile à tenir sur du long terme, car nombreux peuvent être les
+        causes qui affecteront l'économie et, par relation de cause à effet, les monnaies.</p>
+
+      <p>De ce fait, plusieurs crises ont déjà eu lieu suite à de mauvaises gestions de par les grandes banques
+        centrales, donc les États ainsi que les banques privées ayant tantôt abusé de dérives et aberrations monétaires
+        à des fins lucratives, tantôt mené des politiques globales très fragiles.</p>
+
+      <p>Ce faisant, Satoshi Nakamoto ne voit qu'une solution : il s'agit d'une monnaie qui serait <strong>totalement
+          décentralisée</strong>.</p>
+
+      <h4>Centralisation vs Décentralisation</h4>
+      <p>Pour expliquer la notion de décentralisation, quoi de plus simple que de vous donner son contraire : la
+        <strong>centralisation</strong>. La centralisation est le fait, d'un point de vue monétaire, qu'une entité
+        gouverne à plein pouvoir l'impression de la monnaie, sa politique, ainsi que ses transactions et leur gestion.
+      </p>
+
+      <p>Cette centralisation était évidemment inévitable avant l'invention des ordinateurs, d'internet et d'une
+        mondialisation assez avancée, qui sont les principales innovations permettant de créer une monnaie unique
+        complètement décentralisée.</p>
+
+      <p>En effet la décentralisation, dans le cas du bitcoin, est permise uniquement car le système est autonome. Il
+        s'agit d'un algorithme permettant le fonctionnement et la comptabilité des échanges dans son propre réseau
+        (blockchain), afin de se passer de l'action humaine quant à l'enregistrement des transactions, du taux
+        d'inflation ainsi que de l'impression monétaire.</p>
+
+      <div class="callout">
+        <span class="callout-title">✨ Pureté politique</span>
+        Puisque le réseau Bitcoin est géré par un algorithme, cela en fait une monnaie ayant une certaine pureté
+        politique car non soumise aux doctrines et dogmes des hommes, si ce n'est les règles érigées lors de sa
+        création.
+      </div>
+
+      <p>De par ce biais, Satoshi Nakamoto espérait créer une monnaie refuge permettant de se couvrir de
+        l'hyperinflation des monnaies FIAT fortes (telles que euros ou dollars) ainsi que d'autres aspects propres au
+        fonctionnement bancaire tels que les nombreux frais de gestions et autres joyeusetés dont les banques sont les
+        seules maîtres décisionnaires.</p>
+
+      <p><strong>Pour résumer :</strong> personne, ni aucune organisation de n'importe quelle nature ne peut débloquer
+        du Bitcoin à sa guise, contrairement à l'euro par exemple dont la BCE n'hésite guère lorsqu'il s'agit de faire
+        chauffer la planche à billet, créant ainsi de l'inflation. L'inflation du Bitcoin est donc totalement contrôlée
+        et immuable car le réseau débloque les nouveaux tokens tous les x temps, et personne ne peut changer cette règle
+        car l'algorithme est conçu tel quel.</p>
+
+      <p>Aussi personne ne vous demandera des comptes sur votre argent comme sa provenance, ni même ne vous soutirera
+        des sous pour avoir laissé votre argent sur un compte bancaire alors même que vous êtes obligé d'en avoir un
+        pour récupérer votre salaire (frais de gestion).</p>
+
+      <div class="callout callout-warning">
+        <span class="callout-title">🏦 Le système bancaire actuel</span>
+        Il nous faut aborder la quasi pyramide de Ponzi inhérente au système bancaire actuel. Les banques privées ne
+        disposent pas de la totalité des fonds qu'elles gèrent. Cet argent numérique sur votre compte est ce que l'on
+        appelle l'<strong>argent scriptural</strong>. Si demain une grande banque venait à faire faillite, vous perdriez
+        la quasi totalité de vos fonds. Cela est impossible avec le Bitcoin : il n'y aura jamais plus de Bitcoin
+        réellement que ce qu'il en existe.
+      </div>
+
+      <p>En bref, le Bitcoin c'est la liberté monétaire et la garantie qu'on est le possesseur de sa monnaie. C'est
+        aussi le moyen de se débarrasser des banques privées dont le but est de se faire de l'argent en gardant le
+        vôtre.</p>
+
+      <p><strong>Définition synthétique :</strong> Le Bitcoin c'est simplement un moyen d'échange de valeur (monnaie)
+        numérique émise sur une base de données distribuée et immuable, totalement peer to peer et décentralisée.</p>
+
+      <h2>III. Altcoins, les autres cryptomonnaies et leurs portées technologiques</h2>
+
+      <p>Le Bitcoin est une des premières cryptomonnaies, seulement beaucoup d'autres ont vu le jour depuis avec divers
+        projets, utilisations et méthodes de fonctionnement. Bien qu'elles soient toutes des cryptomonnaies à part
+        entière, on appelle les autres cryptos, hors Bitcoin, des <strong>Altcoins</strong>. Cette norme vous montre
+        déjà à quel point les initiés à la cryptomonnaie voient le Bitcoin comme le père des cryptos, et démontre qu'il
+        est la référence lorsque l'on parle de cryptomonnaies.</p>
+
+      <p>Les altcoins, souvent raccourcis en « alts », représentent donc l'ensemble des cryptomonnaies en dehors du
+        Bitcoin. On estime qu'il en existerait près de <strong>20 000</strong>.</p>
+
+      <h3>🗂️ Les 3 grandes familles d'altcoins</h3>
+      <p>Il existe plusieurs types de cryptomonnaies, ce qui déjà vous permettra d'y voir un peu plus clair. On
+        distingue trois grandes familles d'altcoins, facilement identifiables de par la nature de leur projet :</p>
+
+      <h4>1. Les Altcoins à fondamentaux</h4>
+      <p>Les altcoins à fondamentaux sont tous les alts apportant une solution ou innovation nouvelle dans l'écosystème
+        des cryptomonnaies. Cela peut toucher un vaste panel de domaines possible si tenté que la finalité du projet
+        soit l'apport d'une plus value technologique, en lien avec les cryptomonnaies.</p>
+
+      <p>Beaucoup de ces Altcoins à fondamentaux sont des projets visant à révolutionner le web actuel, en créant ce que
+        l'on appelle le <strong>web 3.0</strong> (notion développée dans le chapitre 6). Ainsi Métaverse, protocole de
+        finance décentralisée, monnaie numérique, service décentralisé tel que le streaming, la wifi, le partage de
+        données ou même le stockage de ces dernières, sont autant d'innovations apportées par des projets
+        cryptographiques de type fondamentale.</p>
+
+      <div class="callout">
+        <span class="callout-title">💡 À retenir</span>
+        Ces projets sont ceux qui devraient vous intéresser le plus largement en terme d'investissement. Du moment que
+        le projet remplit un certain nombre d'objectifs, est pensé comme un produit et a une utilité inhérente à sa
+        technologie, on parlera d'Altcoins à fondamentaux.
+      </div>
+
+      <h4>2. Les Shitcoins (Memecoins)</h4>
+      <p>Aussi appelés memecoins ou crypto-blagues, les shitcoins sont une catégorie d'Altcoins, ayant la particularité
+        de n'avoir aucun réel objectif de conception, si ce n'est la spéculation en terme d'actif financier.</p>
+
+      <p>Ainsi, ces cryptomonnaies n'apportent aucune réelle valeur ajoutée à l'écosystème. Leur objectif n'étant que la
+        spéculation, il n'y a pas grand chose à attendre de ces cryptomonnaies. Puisqu'elles n'apportent aucune plus
+        value et ne comblent aucun besoin, leur valeur réelle est très compliquée à déterminer.</p>
+
+      <div class="callout callout-warning">
+        <span class="callout-title">⚠️ Attention</span>
+        Je vous déconseille d'investir sur cette classe d'actif, qui représente bien plus une sorte de casino numérique.
+        Le risque de volatilité est très accru et la valeur de la cryptomonnaie n'est garantie par aucune réelle
+        innovation.
+      </div>
+
+      <p>Parmi le top 50, seulement deux tokens sont des shitcoins : <strong>Dogecoin</strong>, la première à avoir été
+        créée, ainsi que le <strong>Shiba Inu</strong>.</p>
+
+      <h2>IV. Les stablecoins : le pont entre les cryptomonnaies et les monnaies FIAT</h2>
+
+      <p>Les stablecoins ont pour but, comme leur nom le présuppose, de proposer un jeton dont la valeur sera toujours
+        la même, à quelques 0,05% prêt.</p>
+
+      <p>La plupart des stablecoins représente la valeur du dollar, soit un jeton sera égal à <strong>1$</strong>. Bien
+        qu'il en existe sur d'autres devises monétaires FIAT telles que l'euro ou le Yen. Parmi les stablecoins les plus
+        utilisés, on retrouve l'<strong>USDT</strong> de la société Tether, le <strong>BUSD</strong> de l'échangeur de
+        cryptomonnaie Binance, ainsi que l'<strong>USDC</strong> proposé par la société Circle.</p>
+
+      <h3>💰 À quoi servent les stablecoins ?</h3>
+
+      <p><strong>1. Refuge en tendance baissière</strong><br>
+        Si vous achetez 1 BTC à 10 000$ et que celui-ci monte à 60 000$, vous aurez donc réalisé un x6 sur votre mise de
+        départ. Maintenant, rien ne vous dit que le marché ne va pas redescendre subitement. Pour pallier à cela, si
+        vous sentez que le marché risque de se retourner et que vous souhaitez donc sécuriser votre plus value, vous
+        n'avez qu'à échanger votre BTC contre l'équivalent en USDT par exemple.</p>
+
+      <p><strong>2. Optimisation fiscale (France)</strong><br>
+        En France vous êtes taxé sur chacune de vos plus values, à hauteur de <strong>30%</strong>. Cette taxation ne
+        s'applique qu'en cas de conversion de vos cryptomonnaies en monnaie FIAT (euro, dollar etc). En utilisant des
+        stablecoins, vous n'êtes donc pas taxé puisqu'il s'agit d'une conversion de cryptomonnaie à cryptomonnaie.</p>
+
+      <p><strong>3. Finance Décentralisée (DeFi)</strong><br>
+        Les stablecoins permettent des rendements assez conséquents en les bloquant durant une longue période afin d'en
+        générer des intérêts, c'est ce que l'on appelle le <strong>staking</strong>. C'est à peu de chose près comme le
+        livret A, sauf que vous pouvez en espérer entre 10 et 20% de rendement annuel.</p>
+
+      <h3>🔐 La collatéralisation : comment la valeur est garantie ?</h3>
+
+      <p>Mais alors qu'est ce qui garantit que derrière chaque unité de stablecoin, se cache bel et bien la valeur d'un
+        dollar ? C'est la <strong>collatéralisation</strong>. Il y a différentes sortes de collatéralisations :</p>
+
+      <ul>
+        <li><strong>Collatéralisation fiat :</strong> La société émettrice possède dans un compte en banque l'équivalent
+          de sa supply en argent réel. Ainsi, s'il y a 200 000 unités de stablecoin, la société se doit de posséder 200
+          000$ sur un compte en banque.</li>
+
+        <li><strong>Collatéralisation par actifs financiers :</strong> La société achète des produits financiers
+          liquides (actions, obligations) d'une valeur légèrement supérieure à sa supply, afin de garantir qu'en cas de
+          baisse de la valeur de ses actifs financiers, elle puisse quand même avoir l'équivalent afin d'obtenir 1$ par
+          unité.</li>
+
+        <li><strong>Collatéralisation algorithmique :</strong> Pour émettre un token stablecoin, le système
+          algorithmique va détruire l'équivalent en valeur d'un autre crypto-actif. Par exemple, pour émettre 1 UST
+          (stablecoin), le système détruit l'équivalent de 1$ de token LUNA. La valeur du token UST est donc garantie
+          par la destruction du token LUNA.</li>
+      </ul>
+
+      <div class="callout">
+        <span class="callout-title">✅ En résumé</span>
+        Dans tous les cas, la valeur créée n'est pas ex-nihilo. La valeur de 1$ par unité de stablecoin est donc
+        garantie soit par de vrais dollars, soit par des titres financiers, soit par un crypto-actif dont la valeur est
+        couverte par son market cap.
+      </div>
+
+    </article>
+
+    <nav class="chapter-nav">
+      <a href="cours.html" class="nav-btn">
+        <span class="nav-label">← Retour aux</span>
+        <span class="nav-title">Chapitres</span>
+      </a>
+      <a href="chapitre-02.html" class="nav-btn next">
+        <span class="nav-label">Chapitre suivant →</span>
+        <span class="nav-title">Introduction à la Blockchain</span>
+      </a>
+    </nav>
+  </main>
+
+  <script>
+    // Barre de progression de lecture
+    window.onscroll = function () {
+      const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      document.getElementById("progressBar").style.width = scrolled + "%";
+    };
+
+    // Menu mobile
+    const toggle = document.querySelector('.mobile-toggle');
+    const nav = document.querySelector('.nav-links');
+    if (toggle) toggle.addEventListener('click', () => nav.classList.toggle('active'));
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => nav.classList.remove('active'));
+    });
+  </script>
+</body>
+
+</html>

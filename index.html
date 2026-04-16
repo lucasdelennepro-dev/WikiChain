@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WikiChain | Apprenez la Blockchain & les Cryptomonnaies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Wiki<span>Chain</span></div>
+                <button class="mobile-toggle" aria-label="Menu">☰</button>
+                <div class="nav-links">
+                    <a href="cours-index.html">Cours</a>
+                    <a href="quiz-index.html" class="btn btn-primary"
+                        style="padding: 10px 20px; margin-left: auto; color: #000000;">Quiz</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Maîtrisez la <span class="gradient-text">Blockchain</span> & les Cryptomonnaies</h1>
+            <p>Des cours clairs, pratiques et accessibles pour comprendre, investir et sécuriser vos actifs numériques.
+                Démarrez sans prérequis techniques.</p>
+            <div>
+                <a href="quiz-index.html" class="btn btn-primary">Evaluez votre niveau</a>
+                <a href="cours-index.html" class="btn btn-outline">Voir les parcours</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-number">13</div>
+                    <div class="stat-label">Modules interactifs</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">11h</div>
+                    <div class="stat-label">Durée moyenne</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">42</div>
+                    <div class="stat-label">Parcours réussis</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features container" id="features">
+        <h2 class="section-title">Explorez les <span class="gradient-text">piliers</span> du Web3</h2>
+        <p class="section-subtitle">Structurez votre apprentissage à votre rythme grâce à des modules gratuits,
+            progressifs et intéractifs.</p>
+    </section>
+
+    <script>
+        // Menu mobile
+        const toggle = document.querySelector('.mobile-toggle');
+        const nav = document.querySelector('.nav-links');
+        toggle.addEventListener('click', () => nav.classList.toggle('active'));
+
+        // Fermer le menu au clic sur un lien
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => nav.classList.remove('active'));
+        });
+    </script>
+</body>
+
+</html>

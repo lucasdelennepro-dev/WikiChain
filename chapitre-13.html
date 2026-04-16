@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chap 13 - Sécurité | WikiChain</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link href="style-chapitre.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <nav>
+        <a href="index.html" class="logo">Wiki<span>Chain</span></a>
+        <button class="mobile-toggle" aria-label="Menu">☰</button>
+        <div class="nav-links">
+          <a href="cours-index.html">Cours</a>
+          <a href="quiz-index.html" class="btn-conn">Quiz</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="progress-track">
+    <div class="progress-fill" id="progressBar"></div>
+  </div>
+
+  <main class="chapter-layout">
+    <div class="breadcrumb">
+      <a href="cours-index.html">Parcours d'apprentissage</a> > <span>Chapitre 13 (Final)</span>
+    </div>
+
+    <h1 class="chapter-title">Chapitre 13 : <span class="gradient-text">Sécuriser ses cryptomonnaies</span></h1>
+
+    <article class="content">
+
+      <div class="callout callout-success">
+        <span class="callout-title">🎓 Félicitations !</span>
+        Vous êtes arrivé au dernier chapitre de votre parcours CryptoAcadémie. Ce chapitre final est crucial :
+        <strong>la sécurité</strong>. Peu importe vos gains, si vous ne sécurisez pas vos actifs, tout peut être perdu
+        en quelques secondes.
+      </div>
+
+      <h2>I. Le 2FA : Authentification à double facteur</h2>
+
+      <div class="callout">
+        <span class="callout-title">🔐 Définition</span>
+        La plupart des sites et applications en lien avec l'écosystème des cryptomonnaies utilisent le
+        <strong>2FA</strong> (<em>Two-Factor Authentication</em>), soit l'authentification à double facteur.
+      </div>
+
+      <h3>🔄 Comment fonctionne le 2FA ?</h3>
+
+      <p>Lors de la création de votre compte sur un CEX, en plus d'un mot de passe, on vous demandera de renseigner
+        votre numéro de téléphone ou adresse mail. Lors de votre connexion, vous recevrez un code permettant de
+        confirmer qu'il s'agit bien de vous.</p>
+
+      <div class="callout callout-success">
+        <span class="callout-title">🛡️ Pourquoi c'est efficace</span>
+        Si un pirate venait à trouver le mot de passe de votre compte, il ne pourrait pas se connecter car il lui
+        faudrait aussi :<br>
+        • Soit avoir votre téléphone<br>
+        • Soit un accès direct à votre messagerie e-mail<br><br>
+        Cela ajoute une <strong>couche de sécurité supplémentaire</strong> essentielle.
+      </div>
+
+      <h4>📱 SMS vs Email : lequel choisir ?</h4>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Méthode</th>
+            <th>Avantages</th>
+            <th>Inconvénients</th>
+            <th>Recommandation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>SMS</strong></td>
+            <td>• Plus difficile à pirater à distance<br>• Code reçu même sans internet</td>
+            <td>• Risque de SIM swapping<br>• Dépend du réseau mobile</td>
+            <td>✅ <strong>Recommandé</strong> pour débuter</td>
+          </tr>
+          <tr>
+            <td><strong>Email</strong></td>
+            <td>• Pratique si vous avez accès à votre mail<br>• Fonctionne partout avec internet</td>
+            <td>• Si votre mail est piraté, le 2FA est compromis<br>• Risque si mot de passe mail = mot de passe
+              exchange</td>
+            <td>⚠️ À éviter si votre email n'est pas ultra-sécurisé</td>
+          </tr>
+          <tr>
+            <td><strong>Authenticator App</strong><br>(Google Authenticator, Authy)</td>
+            <td>• Génère des codes hors-ligne<br>• Non lié à votre numéro ou email<br>• Plus sécurisé que SMS</td>
+            <td>• Perte d'accès si vous changez de téléphone sans sauvegarde</td>
+            <td>🏆 <strong>Meilleure option</strong> pour les utilisateurs avancés</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="callout callout-warning">
+        <span class="callout-title">⚠️ Règle d'or pour l'email</span>
+        Si vous utilisez votre adresse mail comme second facteur d'authentification, <strong>ne jamais utiliser le même
+          mot de passe</strong> sur votre adresse mail et sur votre compte d'exchange. Sinon, un pirate ayant obtenu le
+        mot de passe de votre CEX pourra facilement accéder à votre email et contourner le 2FA.
+      </div>
+
+      <h2>II. Hot Wallet / Software Wallet</h2>
+
+      <p>Dans le chapitre 10, nous avons abordé les portefeuilles centralisés (CEX) et les portefeuilles décentralisés
+        tels que MetaMask. Ces types de portefeuilles sont ce que l'on appelle des <strong>Hot Wallets</strong>
+        (portefeuilles chauds).</p>
+
+      <div class="wallet-grid">
+        <div class="wallet-card hot">
+          <span class="wallet-icon">🔥</span>
+          <h4>Hot Wallet 🔥</h4>
+          <p><strong>Définition :</strong> Portefeuille de cryptomonnaies connecté directement à internet.</p>
+          <ul>
+            <li>✅ Pratique pour les transactions fréquentes</li>
+            <li>✅ Interface utilisateur simple</li>
+            <li>✅ Gratuit et facile à configurer</li>
+            <li>❌ Vulnérable aux cyberattaques</li>
+            <li>❌ Risque de phishing et failles logicielles</li>
+          </ul>
+          <p><strong>Exemples :</strong> MetaMask, Trust Wallet, portefeuilles CEX (Binance, Coinbase)</p>
+        </div>
+      </div>
+
+      <div class="callout callout-warning">
+        <span class="callout-title">⚠️ Risques des Hot Wallets</span>
+        Un pirate informatique peut réussir à récupérer vos mots de passe MetaMask ou Binance en utilisant :<br>
+        • Une attaque de <strong>Phishing</strong> (faux site imitant le vrai)<br>
+        • L'exploitation de <strong>failles de sécurité</strong> propres aux plateformes<br>
+        • Des <strong>keyloggers</strong> (logiciels espions enregistrant vos frappes)<br><br>
+        Ces portefeuilles ont un niveau de sécurité correct, mais <strong>ne restent pas infaillibles</strong>.
+      </div>
+
+      <h3>🎯 Quand utiliser un Hot Wallet ?</h3>
+      <ul>
+        <li>Pour des <strong>petites sommes</strong> que vous utilisez régulièrement (trading, DeFi, NFTs)</li>
+        <li>Pour tester de nouveaux protocoles ou applications décentralisées</li>
+        <li><strong>Jamais</strong> pour stocker la majorité de votre patrimoine crypto à long terme</li>
+      </ul>
+
+      <h2>III. Cold Wallet / Hardware Wallet</h2>
+
+      <p>En matière de sécurité, il existe un moyen simple d'éviter toute attaque informatique potentielle : les
+        <strong>Cold Wallets</strong> (portefeuilles froids), aussi appelés <strong>Hardware Wallets</strong>.</p>
+
+      <div class="wallet-card cold" style="margin: 2rem 0;">
+        <span class="wallet-icon">❄️</span>
+        <h4>Cold Wallet ❄️</h4>
+        <p><strong>Définition :</strong> Espaces de stockage externes à votre ordinateur qui permettent de stocker vos
+          cryptomonnaies <strong>hors ligne</strong>.</p>
+        <ul>
+          <li>✅ <strong>Immunité aux cyberattaques</strong> quand déconnecté</li>
+          <li>✅ Clés privées jamais exposées à internet</li>
+          <li>✅ Idéal pour le stockage long terme (HODL)</li>
+          <li>❌ Coût initial (50-150€ selon le modèle)</li>
+          <li>❌ Moins pratique pour les transactions quotidiennes</li>
+          <li>❌ Risque de perte ou dommage physique</li>
+        </ul>
+        <p><strong>Exemples :</strong> Ledger Nano S/X, Trezor Model T, SafePal S1</p>
+      </div>
+
+      <div class="callout callout-success">
+        <span class="callout-title">🔒 Pourquoi c'est ultra-sécurisé</span>
+        Une fois que votre clé USB ou votre disque dur est <strong>déconnecté de votre ordinateur</strong>, il n'y a
+        <strong>aucun moyen</strong> pour un pirate de récupérer ses données à distance. Vos clés privées restent
+        confinées dans l'appareil physique.
+      </div>
+
+      <h3>⚠️ Les risques physiques à connaître</h3>
+
+      <p>Le seul risque qui pourrait se présenter à vous serait de perdre votre Cold Wallet, puisque c'est un objet
+        physique. Aussi, prenez-en soin car bien entendu vous pouvez casser ces objets.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Risque physique</th>
+            <th>Conséquence</th>
+            <th>Parade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Perte du dispositif</strong></td>
+            <td>Accès physique impossible à vos fonds</td>
+            <td>✅ Conserver la <strong>seed phrase</strong> (phrase de récupération) dans un endroit sécurisé et séparé
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Dommages (eau, choc, feu)</strong></td>
+            <td>Dispositif hors service</td>
+            <td>✅ Utiliser une <strong>capsule anti-feu/eau</strong> pour stocker le wallet + seed phrase</td>
+          </tr>
+          <tr>
+            <td><strong>Oubli du PIN</strong></td>
+            <td>Verrouillage permanent de l'appareil</td>
+            <td>✅ Noter le PIN dans un endroit sécurisé (différent de la seed phrase)</td>
+          </tr>
+          <tr>
+            <td><strong>Seed phrase perdue</strong></td>
+            <td>🚨 <strong>Perte définitive des fonds</strong> en cas de problème avec le hardware wallet</td>
+            <td>✅ Graver la seed phrase sur <strong>acier inoxydable</strong> (résiste au feu/eau) et la stocker en lieu
+              sûr</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="callout callout-danger">
+        <span class="callout-title">🚨 Attention : La Seed Phrase est SACRÉE</span>
+        Votre <strong>seed phrase</strong> (généralement 12 ou 24 mots) est la <strong>clé maîtresse</strong> de tous
+        vos fonds. Règles absolues :<br><br>
+        • <strong>NE JAMAIS</strong> la saisir sur un site web ou un ordinateur connecté<br>
+        • <strong>NE JAMAIS</strong> la partager avec qui que ce soit (même le "support technique")<br>
+        • <strong>NE JAMAIS</strong> la stocker en photo, dans un email, ou sur un cloud<br>
+        • <strong>TOUJOURS</strong> la noter sur papier ou graver sur métal, et la conserver en lieu sûr<br><br>
+        <strong>Quiconque possède votre seed phrase possède vos cryptomonnaies.</strong>
+      </div>
+
+      <h2>IV. Checklist de sécurité ultime</h2>
+
+      <div class="security-checklist">
+        <h4>✅ Avant de stocker des cryptomonnaies, vérifiez :</h4>
+        <ul>
+          <li>2FA activé sur tous vos comptes (de préférence via Authenticator App)</li>
+          <li>Mots de passe uniques et forts pour chaque plateforme (utilisez un gestionnaire comme Bitwarden)</li>
+          <li>Email de récupération sécurisé avec son propre 2FA</li>
+          <li>Seed phrase de votre hardware wallet notée sur support physique (pas numérique !)</li>
+          <li>Seed phrase stockée dans un endroit sécurisé, idéalement en double exemplaire à deux lieux différents</li>
+          <li>Hardware wallet acheté uniquement sur le site officiel du fabricant (jamais sur Amazon/eBay)</li>
+          <li>Firmware du hardware wallet mis à jour régulièrement</li>
+          <li>Adresse de réception toujours vérifiée caractère par caractère avant envoi</li>
+          <li>Test d'envoi avec une petite somme avant tout transfert important</li>
+          <li>Veille active sur les arnaques courantes (phishing, faux supports, giveaways frauduleux)</li>
+        </ul>
+      </div>
+
+      <h2>V. Stratégie de stockage recommandée</h2>
+
+      <p>Pour optimiser sécurité et praticité, adoptez une approche en <strong>trois niveaux</strong> :</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Niveau</th>
+            <th>Type de wallet</th>
+            <th>Usage</th>
+            <th>% du portfolio recommandé</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>🔥 Niveau 1 : Transactionnel</strong></td>
+            <td>Hot Wallet (MetaMask, Trust Wallet)</td>
+            <td>Trading fréquent, DeFi, NFTs, tests</td>
+            <td>5-10%</td>
+          </tr>
+          <tr>
+            <td><strong>⚖️ Niveau 2 : Intermédiaire</strong></td>
+            <td>CEX réputé avec 2FA + retrait activé</td>
+            <td>Attente d'opportunités, liquidité rapide</td>
+            <td>15-25%</td>
+          </tr>
+          <tr>
+            <td><strong>❄️ Niveau 3 : Long terme (HODL)</strong></td>
+            <td>Cold Wallet (Ledger, Trezor)</td>
+            <td>Stockage sécurisé de votre patrimoine principal</td>
+            <td>65-80%</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="callout">
+        <span class="callout-title">💡 Philosophie de sécurité</span>
+        <strong>"Not your keys, not your coins"</strong> — Si vous ne contrôlez pas vos clés privées, vous ne contrôlez
+        pas vraiment vos cryptomonnaies. Utilisez les CEX et Hot Wallets comme des <em>outils de transit</em>, pas comme
+        des coffres-forts.
+      </div>
+
+      <!-- GRADUATION SECTION -->
+      <div class="graduation-badge">
+        <div class="trophy">🏆</div>
+        <h3>Félicitations, vous avez complété WikiChain !</h3>
+        <p>Vous avez désormais les connaissances théoriques et pratiques pour naviguer dans l'écosystème crypto en toute
+          confiance. Rappelez-vous : la sécurité, la patience et l'apprentissage continu sont vos meilleurs alliés.</p>
+        <a href="index.html" class="btn btn-primary" style="display:inline-block;">🏠 Retour à l'accueil</a>
+      </div>
+
+      <div class="callout callout-success">
+        <span class="callout-title">🎯 En résumé : Les 3 piliers de la sécurité crypto</span>
+        <ol style="margin-top:10px; margin-left:20px;">
+          <li><strong>2FA partout</strong> : Authentification à double facteur sur tous vos comptes, de préférence via
+            une app authentificator</li>
+          <li><strong>Hot Wallet pour l'usage, Cold Wallet pour le stockage</strong> : Ne gardez en ligne que ce que
+            vous êtes prêt à perdre</li>
+          <li><strong>Seed phrase sacrée</strong> : Jamais numérique, toujours physique, toujours sécurisée, jamais
+            partagée</li>
+        </ol>
+        <br>
+        <strong>"La sécurité n'est pas un produit, c'est un processus."</strong> — Restez vigilant, restez curieux,
+        restez souverain.
+      </div>
+
+    </article>
+
+    <nav class="chapter-nav">
+      <a href="chapitre-12.html" class="nav-btn">
+        <span class="nav-label">← Chapitre précédent</span>
+        <span class="nav-title">Analyse Technique & Psychologie</span>
+      </a>
+    </nav>
+  </main>
+
+  <script>
+    // Barre de progression de lecture
+    window.onscroll = function () {
+      const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      document.getElementById("progressBar").style.width = scrolled + "%";
+    };
+
+    // Menu mobile
+    const toggle = document.querySelector('.mobile-toggle');
+    const nav = document.querySelector('.nav-links');
+    if (toggle) toggle.addEventListener('click', () => nav.classList.toggle('active'));
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => nav.classList.remove('active'));
+    });
+  </script>
+</body>
+
+</html>

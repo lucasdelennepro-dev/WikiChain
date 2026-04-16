@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chap 05 - Les NFTs | WikiChain</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link href="style-chapitre.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Wiki<span>Chain</span></a>
+                <button class="mobile-toggle" aria-label="Menu">☰</button>
+                <div class="nav-links">
+                    <a href="cours-index.html">Cours</a>
+                    <a href="quiz-index.html" class="btn-conn">Quiz</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="progress-track">
+        <div class="progress-fill" id="progressBar"></div>
+    </div>
+
+    <main class="chapter-layout">
+        <div class="breadcrumb">
+            <a href="cours-index.html">Parcours d'apprentissage</a> > <span>Chapitre 05</span>
+        </div>
+
+        <h1 class="chapter-title">Chapitre 05 : <span class="gradient-text">Les NFTs</span></h1>
+
+        <article class="content">
+
+            <h2>I. Qu'est-ce qu'un NFT ?</h2>
+
+            <p>Les <strong>NFTs</strong>, <em>Non Fungible Token(s)</em>, ou littéralement <strong>jeton non
+                    fongible</strong> en français, sont au même titre que la cryptomonnaie une révolution permise par la
+                blockchain.</p>
+
+            <h3>a) Le fonctionnement des NFTs</h3>
+
+            <p>Pour comprendre leur utilité, il faut d'abord connaître la notion de <strong>fongible</strong>.</p>
+
+            <div class="callout">
+                <span class="callout-title">🔄 Fongible vs Non-fongible</span>
+                <strong>Une chose fongible</strong> est quelque chose de copiable à l'identique. Exemple : deux billets
+                de 5€ sont identiques et ont la même valeur. Si j'échange mon billet avec le vôtre, nous avons toujours
+                5€.<br><br>
+                <strong>Une chose non-fongible</strong> est unique. Exemple : la <em>Mona Lisa</em> de Léonard de Vinci.
+                Vous pouvez avoir une copie parfaite dans votre salon, mais le seul véritable exemplaire se trouve au
+                Louvre.
+            </div>
+
+            <p>Un NFT est un jeton numérique <strong>non reproductible</strong>, car il possède un certificat ancré sur
+                la blockchain qui prouve son authenticité, ainsi que l'identité de son détenteur.</p>
+
+            <div class="callout">
+                <span class="callout-title">🎨 La révolution NFT</span>
+                Il s'agit du monde de l'art transposé au numérique. Mais ce n'est pas tout : l'utilisation des NFTs peut
+                être multiple :
+                <ul style="margin-top:10px; margin-left:20px;">
+                    <li>Une simple image ou œuvre d'art numérique</li>
+                    <li>Une place de concert ou un billet d'événement</li>
+                    <li>Un compte de jeu vidéo ou un skin</li>
+                    <li>Un passeport sanitaire (empêchant les fraudes)</li>
+                    <li>Des documents d'identité, permis, titres de propriété...</li>
+                </ul>
+            </div>
+
+            <p>La révolution de cette technologie réside dans le fait qu'un NFT possède un <strong>certificat de
+                    propriété infalsifiable</strong>, puisque inscrit sur une blockchain. C'est donc un tout nouveau
+                moyen de prouver et d'assurer l'authenticité et la propriété d'un objet.</p>
+
+            <div class="callout callout-warning">
+                <span class="callout-title">⚠️ État actuel du marché</span>
+                Pour le moment, la technologie étant encore à ses débuts, la plupart des NFTs connus ne sont que de
+                vulgaires collections d'images plus ou moins rares et ont pour seul but la spéculation. Cela se
+                rapproche du milieu de l'art traditionnel : une œuvre prend en popularité, faisant grimper son prix.
+                Mais les NFTs sont bien plus qu'une technologie pour les artistes : il est très probable que d'ici
+                quelques années, leur utilisation deviendra largement adoptée.
+            </div>
+
+            <h3>b) Quelques exemples de collections de NFTs connus</h3>
+
+            <p>Il est nécessaire pour votre culture blockchain de connaître les principales grandes collections de NFTs.
+            </p>
+
+            <h4>👾 CryptoPunks</h4>
+            <p>Collection de 10 000 personnages pixelisés 2D, ayant des caractéristiques et un style propre qui les rend
+                uniques. Chaque CryptoPunk possède des attributs combinables : casquette, pipe à tabac, boutons, etc.
+            </p>
+
+            <div class="callout">
+                <span class="callout-title">🏆 Statut</span>
+                C'est la <strong>première grande collection de NFTs</strong>, donc la plus rare et la plus chère.
+            </div>
+
+            <h4>🦍 Bored Ape Yacht Club (BAYC)</h4>
+            <p>Collection de 10 000 singes aux traits uniques. Chaque singe possède des caractéristiques propres : forme
+                de bouche (émotion), casquette, bandana, lunettes de soleil, etc.</p>
+
+            <div class="callout">
+                <span class="callout-title">🤝 Utilité communautaire</span>
+                La détention d'un BAYC ne se limite pas à la spéculation. Les créateurs y ont ajouté un fort aspect
+                communautaire : les détenteurs peuvent participer à des événements organisés directement par les
+                développeurs, en présentant leur NFT comme preuve d'appartenance à ce groupe fermé.
+            </div>
+
+            <div class="image-placeholder">
+                <strong>🖼️ Exemple : CryptoPunk #7804</strong>
+                <img src="Pics/Cryptopunks.png" alt="Capture du plus rare cryptopunk"
+                    style="width:100%; border-radius:12px; margin:2rem 0;">
+            </div>
+
+            <p><strong>Où trouver des NFTs ?</strong> Consultez le site <a href="https://opensea.io"
+                    target="_blank">OpenSea</a>, le plus gros marketplace de vente et d'achat de NFTs.</p>
+
+            <h2>II. Un exemple de projet utilisant les NFTs : Ternoa</h2>
+
+            <p>Puisque je vous parle de NFTs, je me dois de vous toucher un mot à propos du projet
+                <strong>Ternoa</strong> et de sa cryptomonnaie le <strong>CAPS</strong>.
+            </p>
+
+            <p>Ternoa est un projet très prometteur de blockchain pour les NFTs, mais a surtout créé un concept de NFTs
+                qui pourrait s'avérer tout aussi révolutionnaire : les <strong>Secrets NFTs</strong>.</p>
+
+            <div class="callout">
+                <span class="callout-title">🔐 Qu'est-ce qu'un Secret NFT ?</span>
+                Les Secrets NFTs sont des NFTs avec pour but d'être <strong>dévoilés une fois que les conditions, fixées
+                    par son créateur, sont réunies</strong>. Il faut voir cela comme des capsules temporelles : les
+                hommes en créaient avec des objets de leur époque puis les scellaient afin d'être ouvertes dans 50, 100,
+                200 ans.
+            </div>
+
+            <h4>💡 Cas d'usage innovants</h4>
+            <ul>
+                <li><strong>Cadeaux d'anniversaire :</strong> Vous paramétrez une date et une heure, vous envoyez le NFT
+                    à un proche, et il se dévoilera automatiquement à cette date, révélant ainsi son contenu.</li>
+                <li><strong>Métaverse :</strong> Ce procédé serait extrêmement utile pour débloquer du contenu
+                    progressivement dans des environnements virtuels.</li>
+                <li><strong>Héritage et transmission :</strong> <em>C'est la fonction la plus innovante.</em> En
+                    paramétrant votre testament en Secret NFT, avec votre décès comme condition de déverrouillage, le
+                    testament serait dévoilé automatiquement lors de votre mort. Puisque c'est un NFT, il serait
+                    infalsifiable, sûr et identifié comme le vôtre, rendant toute réécriture impossible par un membre
+                    mal intentionné.</li>
+            </ul>
+
+            <div class="callout callout-warning">
+                <span class="callout-title">✨ Avantage majeur</span>
+                Il serait impossible de connaître le contenu du testament avant votre mort, ce qui éviterait beaucoup de
+                problèmes que connaît le système traditionnel de succession.
+            </div>
+
+            <h2>III. Les normes NFTs</h2>
+
+            <p>Lorsque l'on déploie un token, qu'il soit fongible ou non, il y a des règles ainsi que des
+                caractéristiques claires et établies : on appelle cet ensemble les <strong>normes</strong>.</p>
+
+            <div class="callout">
+                <span class="callout-title">🧬 Définition</span>
+                Les normes sont ce qui rend la lecture d'un token possible par la blockchain, afin qu'elle puisse
+                l'intégrer à son réseau. Ce faisant, elles obligent les développeurs à les respecter consciencieusement.
+                Les normes sont l'<strong>ADN d'un token</strong> car elles permettent de savoir sur quel réseau une
+                cryptomonnaie est émise.
+            </div>
+
+            <h4>📋 Tableau des normes principales</h4>
+
+            <table
+                style="width:100%; border-collapse:collapse; margin:1.5rem 0; background:var(--bg-card); border-radius:12px; overflow:hidden;">
+                <thead>
+                    <tr style="background:rgba(0,229,255,0.1);">
+                        <th style="padding:12px 16px; text-align:left; border-bottom:1px solid var(--border-glass);">
+                            Blockchain</th>
+                        <th style="padding:12px 16px; text-align:left; border-bottom:1px solid var(--border-glass);">
+                            Token Fongible</th>
+                        <th style="padding:12px 16px; text-align:left; border-bottom:1px solid var(--border-glass);">NFT
+                            (Non-Fongible)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="border-bottom:1px solid var(--border-glass);">
+                        <td style="padding:12px 16px;"><strong>Ethereum</strong></td>
+                        <td style="padding:12px 16px;"><code>ERC-20</code></td>
+                        <td style="padding:12px 16px;"><code>ERC-721</code> / <code>ERC-1155</code></td>
+                    </tr>
+                    <tr style="border-bottom:1px solid var(--border-glass);">
+                        <td style="padding:12px 16px;"><strong>Binance Smart Chain</strong></td>
+                        <td style="padding:12px 16px;"><code>BEP-20</code></td>
+                        <td style="padding:12px 16px;"><code>BEP-721</code></td>
+                    </tr>
+                    <tr>
+                        <td style="padding:12px 16px;"><strong>Solana</strong></td>
+                        <td style="padding:12px 16px;"><code>SPL Token</code></td>
+                        <td style="padding:12px 16px;"><code>SPL NFT</code></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><strong>Exemple concret :</strong> Si un token est <code>ERC-20</code>, alors il est Ethereum compatible.
+                Pour un token non fongible (NFT), la norme diffère car son utilisation n'est pas la même : on utilise la
+                norme <code>ERC-721</code>.</p>
+
+            <p>Pour créer une collection de NFTs sur Binance, les développeurs devront soumettre leur code à la norme
+                <code>BEP-721</code>, qui diffère donc de celle d'Ethereum. Pour Solana, on utilisera la norme adéquate
+                qui se nomme norme <code>SPL</code>. Ainsi de suite pour toutes les blockchains.
+            </p>
+
+            <div class="image-placeholder">
+                <strong>🔗 Schéma : Compatibilité des normes NFT</strong>
+                <img src="Pics/Normes_NFTS.png" alt="Tableau détaillant les normes NFTs et leurs spécificités. "
+                    style="width:100%; border-radius:12px; margin:2rem 0;">
+
+            </div>
+
+            <div class="callout">
+                <span class="callout-title">💡 À retenir</span>
+                Les NFTs apportent une <strong>preuve de propriété infalsifiable et sécurisée</strong> à tout contenu
+                numérique. Leurs utilisations potentielles sont multiples : titres de propriété, documents d'identité,
+                billets d'événements, objets de jeu, œuvres d'art, et même testaments. Cette technologie pourrait
+                révolutionner la façon dont nous prouvons et transférons la propriété dans le monde numérique.
+            </div>
+
+        </article>
+
+        <nav class="chapter-nav">
+            <a href="chapitre-04.html" class="nav-btn">
+                <span class="nav-label">← Chapitre précédent</span>
+                <span class="nav-title">La Tokenomic</span>
+            </a>
+            <a href="chapitre-06.html" class="nav-btn next">
+                <span class="nav-label">Chapitre suivant →</span>
+                <span class="nav-title">Les projets d'Earning</span>
+            </a>
+        </nav>
+    </main>
+
+    <script>
+        // Barre de progression de lecture
+        window.onscroll = function () {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById("progressBar").style.width = scrolled + "%";
+        };
+
+        // Menu mobile
+        const toggle = document.querySelector('.mobile-toggle');
+        const nav = document.querySelector('.nav-links');
+        if (toggle) toggle.addEventListener('click', () => nav.classList.toggle('active'));
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => nav.classList.remove('active'));
+        });
+    </script>
+</body>
+
+</html>

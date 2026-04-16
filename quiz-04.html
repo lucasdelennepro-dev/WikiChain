@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz 04 | WikiChain</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="style-quiz-xx.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <nav>
+        <a href="index.html" class="logo">Wiki<span>Chain</span></a>
+        <button class="mobile-toggle" aria-label="Menu">☰</button>
+        <div class="nav-links">
+          <a href="quiz-index.html">Quiz</a>
+          <a href="cours-index.html" class="btn-conn">Cours</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container quiz-page">
+    <div class="breadcrumb">
+      <a href="quiz-index.html">Tous les quiz</a> > <span>Quiz 04</span>
+    </div>
+    <h1 class="quiz-title">Quiz 04 : <span class="gradient-text">La Tokenomic</span></h1>
+    <p class="quiz-subtitle">12 questions pour tester vos connaissances sur l'inflation, le burn, la distribution et les
+      pièges à éviter.</p>
+
+    <form id="quizForm">
+      <!-- Q1 -->
+      <div class="question-card" data-question="q1">
+        <h3>1. Comment définit-on précisément la tokenomic ?</h3>
+        <div class="options">
+          <label class="option"><input type="radio" name="q1" value="a"><span class="check"></span><span>Le prix actuel
+              du token sur les exchanges</span></label>
+          <label class="option"><input type="radio" name="q1" value="b"><span class="check"></span><span>Le plan
+              d'émission et de distribution d'une cryptomonnaie</span></label>
+          <label class="option"><input type="radio" name="q1" value="c"><span class="check"></span><span>Le code source
+              du smart contract</span></label>
+          <label class="option"><input type="radio" name="q1" value="d"><span class="check"></span><span>Le nombre total
+              de mineurs sur le réseau</span></label>
+        </div>
+      </div>
+
+      <!-- Q2 -->
+      <div class="question-card" data-question="q2">
+        <h3>2. Quelle est la formule permettant d'estimer le prix d'un token ?</h3>
+        <div class="options">
+          <label class="option"><input type="radio" name="q2" value="a"><span class="check"></span><span>Market Cap ÷
+              Supply en circulation</span></label>
+          <label class="option"><input type="radio" name="q2" value="b"><span class="check"></span><span>Supply max ÷
+              Volume d'échange 24h</span></label>
+          <label class="option"><input type="radio" name="q2" value="c"><span class="check"></span><span>Prix du Bitcoin
+              × 0,1</span></label>
+          <label class="option"><input type="radio" name="q2" value="d"><span class="check"></span><span>Nombre de
+              détenteurs × Frais de gaz</span></label>
+        </div>
+      </div>
+
+      <!-- Q3 -->
+      <div class="question-card" data-question="q3">
+        <h3>3. Quel est l'impact principal d'une augmentation massive de la supply sur la valeur d'un token ?</h3>
+        <div class="options">
+          <label class="option"><input type="radio" name="q3" value="a"><span class="check"></span><span>La valeur
+              augmente proportionnellement</span></label>
+          <label class="option"><input type="radio" name="q3" value="b"><span class="check"></span><span>La valeur
+              baisse, car la rareté diminue</span></label>
+          <label class="option"><input type="radio" name="q3" value="c"><span class="check"></span><span>La valeur reste
+              stable grâce au Market Cap</span></label>
+          <label class="option"><input type="radio" name="q3" value="d"><span class="check"></span><span>La supply n'a
+              aucun impact sur le prix</span></label>
+        </div>
+      </div>
+
+      <!-- Q4 -->
+      <div class="question-card" data-question="q4">
+        <h3>4. Qu'est-ce que le mécanisme de "burn" (brûlage) ?</h3>
+        <div class="options">
+          <label class="option"><input type="radio" name="q4" value="a"><span class="check"></span><span>Envoyer des
+              tokens à une adresse inaccessible pour les détruire définitivement</span></label>
+          <label class="option"><input type="radio" name="q4" value="b"><span class="check"></span><span>Augmenter la
+              supply pour récompenser les holders</span></label>
+          <label class="option"><input type="radio" name="q4" value="c"><span class="check"></span><span>Supprimer les
+              transactions échouées du réseau</span></label>
+          <label class="option"><input type="radio" name="q4" value="d"><span class="check"></span><span>Convertir des
+              tokens en actions réelles</span></label>
+        </div>
+      </div>
+
+      <!-- Q5 -->
+      <div class="question-card" data-question="q5">
+        <h3>5. D'où proviennent généralement les tokens brûlés dans les systèmes utilisant le burn ?</h3>
+        <div class="options">
+          <label class="option"><input type="radio" name="q5" value="a"><span class="check"></span><span>Des
+              portefeuilles des petits investisseurs</span></label>
+          <label class="option"><input type="radio" name="q5" value="b"><span class="check"></span><span>D'une partie
+              des frais de transaction</span></label>
+          <label class="option"><input type="radio" name="q5" value="c"><span class="check"></span><span>Des récompenses
+              de minage des 50 premiers blocs</span></label>
+          <label class="option"><input type="radio" name="q5" value="d"><span class="check"></span><span>Des fonds gelés
+              des exchanges</span></label>
+        </div>
+      </div>
+
+      <!-- Q6 -->
+      <div class="question-card" data-question="q6">
+        <h3>6. Quels projets sont cités dans le chapitre comme utilisant un mécanisme de burn ?</h3>
+        <div class="options">
+          <label class="option"><input type="radio" name="q6" value="a"><span class="check"></span><span>Bitcoin,
+              Dogecoin, Cardano</span></label>
+          <label class="option"><input type="radio" name="q6" value="b"><span class="check"></span><span>Avalanche, BNB,
+              Ethereum</span></label>
+          <label class="option"><input type="radio" name="q6" value="c"><span class="check"></span><span>Ripple, Monero,
+              Tezos</span></label>
+          <label class="option"><input type="radio" name="q6" value="d"><span class="check"></span><span>Uniswap, Aave,
+              MakerDAO</span></label>
+        </div>
+      </div>
+
+      <!-- Q7 -->
+      <div class="question-card" data-question="q7">
+        <h3>7. Quel pourcentage de la supply les créateurs gardent-ils généralement pour financer leur projet ?</h3>
+        <div class="options">
+          <label class="option"><input type="radio" name="q7" value="a"><span class="check"></span><span>Environ
+              1%</span></label>
+          <label class="option"><input type="radio" name="q7" value="b"><span class="check"></span><span>Environ
+              50%</span></label>
+          <label class="option"><input type="radio" name="q7" value="c"><span class="check"></span><span>Environ
+              20%</span></label>
+          <label class="option"><input type="radio" name="q7" value="d"><span
+              class="check"></span><span>100%</span></label>
+        </div>
+      </div>
+
+      <!-- Q8 -->
+      <div class="question-card" data-question="q8">
+        <h3>8. Pourquoi est-il crucial de réserver une partie de la supply pour les mineurs ou validateurs ?</h3>
+        <div class="options">
+          <label class="option"><input type="radio" name="q8" value="a"><span class="check"></span><span>Pour les
+              empêcher de créer leurs propres tokens</span></label>
+          <label class="option"><input type="radio" name="q8" value="b"><span class="check"></span><span>Pour les
+              inciter à sécuriser le réseau bénévolement au début</span></label>
+          <label class="option"><input type="radio" name="q8" value="c"><span class="check"></span><span>Pour payer les
+              frais de listing sur les exchanges</span></label>
+          <label class="option"><input type="radio" name="q8" value="d"><span class="check"></span><span>Pour financer
+              le marketing du projet</span></label>
+        </div>
+      </div>
+
+      <!-- Q9 -->
+      <div class="question-card" data-question="q9">
+        <h3>9. Que se passe-t-il si l'allocation pour les validateurs s'épuise sans alternative prévue ?</h3>
+        <div class="options">
+          <label class="option"><input type="radio" name="q9" value="a"><span class="check"></span><span>Les validateurs
+              continuent gratuitement par altruisme</span></label>
+          <label class="option"><input type="radio" name="q9" value="b"><span class="check"></span><span>Le réseau
+              devient plus rapide automatiquement</span></label>
+          <label class="option"><input type="radio" name="q9" value="c"><span class="check"></span><span>Ils quittent le
+              réseau, compromettant sa sécurité</span></label>
+          <label class="option"><input type="radio" name="q9" value="d"><span class="check"></span><span>Le prix du
+              token double instantanément</span></label>
+        </div>
+      </div>
+
+      <!-- Q10 -->
+      <div class="question-card" data-question="q10">
+        <h3>10. Quel risque majeur représente un déblocage massif de tokens par l'équipe sans acheteurs au rendez-vous ?
+        </h3>
+        <div class="options">
+          <label class="option"><input type="radio" name="q10" value="a"><span class="check"></span><span>La supply
+              augmente tandis que le Market Cap stagne, faisant chuter le prix</span></label>
+          <label class="option"><input type="radio" name="q10" value="b"><span class="check"></span><span>Le réseau
+              devient trop rapide et crash</span></label>
+          <label class="option"><input type="radio" name="q10" value="c"><span class="check"></span><span>Les frais de
+              transaction sont annulés</span></label>
+          <label class="option"><input type="radio" name="q10" value="d"><span class="check"></span><span>L'exchange
+              ferme automatiquement</span></label>
+        </div>
+      </div>
+
+      <!-- Q11 -->
+      <div class="question-card" data-question="q11">
+        <h3>11. Calcul : Un projet a un MC de 1 000 000€ pour 100 000 tokens (prix = 10€). Si 10 000 tokens
+          supplémentaires sont mis sur le marché sans acheteurs, quel est le nouveau prix approximatif ?</h3>
+        <div class="options">
+          <label class="option"><input type="radio" name="q11" value="a"><span
+              class="check"></span><span>11,00€</span></label>
+          <label class="option"><input type="radio" name="q11" value="b"><span
+              class="check"></span><span>9,09€</span></label>
+          <label class="option"><input type="radio" name="q11" value="c"><span
+              class="check"></span><span>5,00€</span></label>
+          <label class="option"><input type="radio" name="q11" value="d"><span
+              class="check"></span><span>10,00€</span></label>
+        </div>
+      </div>
+
+      <!-- Q12 -->
+      <div class="question-card" data-question="q12">
+        <h3>12. Quel événement permet aux créateurs de distribuer gratuitement des tokens à la communauté pour la
+          récompenser ?</h3>
+        <div class="options">
+          <label class="option"><input type="radio" name="q12" value="a"><span class="check"></span><span>Le
+              Fork</span></label>
+          <label class="option"><input type="radio" name="q12" value="b"><span
+              class="check"></span><span>L'Airdrop</span></label>
+          <label class="option"><input type="radio" name="q12" value="c"><span class="check"></span><span>Le
+              Burn</span></label>
+          <label class="option"><input type="radio" name="q12" value="d"><span class="check"></span><span>Le
+              KYC</span></label>
+        </div>
+      </div>
+
+      <button type="button" class="btn-submit" id="submitBtn">🔍 Vérifier mes réponses</button>
+    </form>
+
+    <div class="result-box" id="resultBox">
+      <h2>Résultat du Quiz</h2>
+      <div class="score" id="scoreDisplay">0/12</div>
+      <p id="feedbackText"></p>
+      <div class="result-actions">
+        <button type="button" class="btn-retry" id="retryBtn">🔄 Recommencer le quiz</button>
+        <a href="chapitre-04.html" class="btn-review">📖 Relire le chapitre 4</a>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const CORRECT_ANSWERS = {
+        q1: 'b', q2: 'a', q3: 'b', q4: 'a', q5: 'b',
+        q6: 'b', q7: 'c', q8: 'b', q9: 'c', q10: 'a',
+        q11: 'b', q12: 'b'
+      };
+
+      const form = document.getElementById('quizForm');
+      const submitBtn = document.getElementById('submitBtn');
+      const resultBox = document.getElementById('resultBox');
+      const scoreDisplay = document.getElementById('scoreDisplay');
+      const feedbackText = document.getElementById('feedbackText');
+      const retryBtn = document.getElementById('retryBtn');
+
+      submitBtn.addEventListener('click', () => {
+        let score = 0;
+        const formData = new FormData(form);
+
+        for (const q in CORRECT_ANSWERS) {
+          const selected = formData.get(q);
+          const card = document.querySelector(`[data-question="${q}"]`);
+          const options = card.querySelectorAll('input[type="radio"]');
+
+          options.forEach(opt => {
+            opt.disabled = true;
+            const label = opt.closest('.option');
+            label.classList.add('disabled');
+
+            if (opt.value === CORRECT_ANSWERS[q]) label.classList.add('correct');
+            if (selected && opt.checked && selected !== CORRECT_ANSWERS[q]) label.classList.add('wrong');
+          });
+
+          if (selected === CORRECT_ANSWERS[q]) score++;
+        }
+
+        scoreDisplay.textContent = `${score}/12`;
+        scoreDisplay.className = 'score';
+
+        const percentage = (score / 12) * 100;
+        if (percentage >= 75) {
+          scoreDisplay.classList.add('high');
+          feedbackText.textContent = "🌟 Excellent ! Vous maîtrisez parfaitement la tokenomic et ses mécanismes économiques.";
+        } else if (percentage >= 50) {
+          scoreDisplay.classList.add('mid');
+          feedbackText.textContent = "📚 Bien joué ! Revoyez les questions en rouge pour consolider les notions de supply et de distribution.";
+        } else {
+          scoreDisplay.classList.add('low');
+          feedbackText.textContent = "💡 Pas de panique. Relisez le chapitre 4 sur l'inflation et retentez l'expérience.";
+        }
+
+        submitBtn.style.display = 'none';
+        resultBox.classList.add('show');
+        resultBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      });
+
+      retryBtn.addEventListener('click', () => {
+        form.reset();
+        document.querySelectorAll('.option').forEach(opt => {
+          opt.classList.remove('correct', 'wrong', 'disabled');
+          opt.querySelector('input').disabled = false;
+        });
+        submitBtn.style.display = 'block';
+        resultBox.classList.remove('show');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      // Menu mobile
+      const toggle = document.querySelector('.mobile-toggle');
+      const nav = document.querySelector('.nav-links');
+      if (toggle) toggle.addEventListener('click', () => nav.classList.toggle('active'));
+      document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => nav.classList.remove('active'));
+      });
+    });
+  </script>
+</body>
+
+</html>

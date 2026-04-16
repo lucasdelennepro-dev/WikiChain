@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chap 02 - La blockchain | WikiChain</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link href="style-chapitre.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Wiki<span>Chain</span></a>
+                <button class="mobile-toggle" aria-label="Menu">☰</button>
+                <div class="nav-links">
+                    <a href="cours-index.html">Cours</a>
+                    <a href="quiz-index.html" class="btn-conn">Quiz</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="progress-track">
+        <div class="progress-fill" id="progressBar"></div>
+    </div>
+
+    <main class="chapter-layout">
+        <div class="breadcrumb">
+            <a href="cours-index.html">Parcours d'apprentissage</a> > <span>Chapitre 02</span>
+        </div>
+
+        <h1 class="chapter-title">Chapitre 02 : <span class="gradient-text">Qu'est-ce qu'une blockchain ?</span></h1>
+
+        <article class="content">
+
+            <h2>I. Qu'est-ce que c'est la blockchain ?</h2>
+
+            <p>Une blockchain est l'infrastructure qui permet le déploiement d'une cryptomonnaie. Ainsi il ne peut
+                exister de crypto sans blockchain, mais l'inverse n'est pas vrai : une blockchain peut totalement
+                exister sans nécessiter une cryptomonnaie.</p>
+
+            <p>Une blockchain est, dans l'idée, <strong>décentralisée</strong>. C'est à dire qu'aucun organisme ou
+                individu spécifique n'a le contrôle sur le réseau, tous les utilisateurs de ce réseau sont sur le même
+                point d'égalité, ils disposent donc des mêmes pouvoirs et des mêmes devoirs.</p>
+
+            <div class="callout">
+                <span class="callout-title">🌐 Analogie Internet</span>
+                La blockchain est comparable à l'infrastructure internet permettant l'émission du web et donc des sites
+                internets. Le réseau internet repose sur les protocoles de relais connexion <strong>TCP / IP</strong>.
+                Dans cette analogie, le réseau internet et les technologies qui découlent de son infrastructure sont
+                comparables à la blockchain. Les sites internets construits sur ce réseau sont les cryptomonnaies.
+            </div>
+
+            <p>Ainsi, les cryptomonnaies se servent de l'infrastructure du réseau blockchain pour pouvoir émettre et
+                être utilisées.</p>
+
+            <h3>🔧 Définition technique</h3>
+            <p>La blockchain c'est l'infrastructure qui permet l'enregistrement de données, de sorte à garantir une
+                viabilité et traçabilité parfaite de celles-ci.</p>
+
+            <p>Bien que souvent comparée à un serveur décentralisé, la blockchain peut aussi s'apparenter à un
+                <strong>grand livre</strong>, ou registre, où l'on vient y inscrire des informations (datas / données)
+                importantes, de toutes sortes. Une fois enregistrées dans une blockchain, les données sont garanties
+                d'être <strong>inchangeables, sûres et surtout inviolables</strong>.
+            </p>
+
+            <p>Ainsi la donnée inscrite dans une blockchain peut, comme pour Bitcoin, être relative à l'activité
+                économique effectuée par les utilisateurs, qui réalisent des transactions. Pour Bitcoin l'essentiel des
+                informations inscrites dans la blockchain pourrait se vulgariser tel quel :</p>
+
+            <ul>
+                <li><code>Wallet X envoie tant de BTC à wallet Y</code></li>
+                <li><code>Wallet Z envoie x BTC vers wallet X</code></li>
+            </ul>
+
+            <p>On utilisera désormais le terme <strong>wallet</strong> au lieu de portefeuille, qui est son équivalent
+                anglais et qui demeure le mot utilisé dans le jargon des cryptos.</p>
+
+            <p>On inscrit ainsi dans la blockchain Bitcoin toutes les informations liées à l'activité financière de la
+                crypto BTC, de sorte à avoir une viabilité parfaite (toutes les transactions inscrites sont vérifiées et
+                donc sûres) mais aussi garantie d'avoir l'historique de toutes les transactions émises (la blockchain
+                rendant les informations inchangeables), et donc une <strong>traçabilité totale</strong> de l'activité
+                financière qui s'y déroule.</p>
+
+            <h3>⛏️ Le rôle des mineurs et la décentralisation</h3>
+
+            <p>Mais qui peut écrire dans ce livre ? Car si n'importe qui pouvait le faire, sans aucun contrôle, on
+                pourrait alors inscrire des transactions fausses ou impossibles.</p>
+
+            <p>De fait, il faut donc obligatoirement qu'une personne vérifie la faisabilité et la viabilité de la
+                transaction. Problème : une blockchain est décentralisée, il n'y a donc aucune autorité centrale qui
+                pourrait réguler et agir tel un gendarme sur le réseau.</p>
+
+            <p>Le moyen est assez technique mais plutôt facile à appréhender. Il se nomme le <strong>consensus de preuve
+                    de travail</strong>, ou <em>proof of work (PoW)</em>, plus communément connu sous le nom de
+                <strong>mining</strong>.
+            </p>
+
+            <div class="callout">
+                <span class="callout-title">🔐 Proof of Work en résumé</span>
+                Le proof of work est un système de consensus qui permet aux participants volontaires d'effectuer un
+                travail de validation, afin de traiter tous les aspects liés à la bonne conformité des données
+                enregistrées sur la blockchain, pour pouvoir ensuite les y sceller à tout jamais.
+            </div>
+
+            <h4>Comment fonctionne une transaction Bitcoin ?</h4>
+            <ol>
+                <li>Lors d'un transfert de 10 BTC du Wallet Z au Wallet A, un validateur va vérifier, grâce à des
+                    calculs complexes, que les wallets existent bien.</li>
+                <li>Il vérifie ensuite que le portefeuille Z possède bien la somme qu'il souhaite échanger + qu'il
+                    dispose bien des frais de transaction pour récompenser le validateur.</li>
+                <li>Si ces données sont valides, alors le validateur va donner son feu vert pour inscrire cet échange
+                    dans la blockchain.</li>
+                <li>Afin de s'assurer de la bonne foi du validateur, d'autres vont venir vérifier son résultat. Lorsque
+                    <strong>20 validateurs différents</strong> l'ont confirmé, ils regroupent la transaction avec
+                    d'autres transactions validées.
+                </li>
+                <li>Ce groupe de transactions valides va être scellé dans un <strong>bloc</strong>. Pour l'inscrire à
+                    tout jamais dans la blockchain il faut alors le crypter en résolvant une équation mathématique
+                    complexe.</li>
+                <li>Le premier ordinateur de validateur à trouver la réponse gagne le droit de sceller le bloc. Il
+                    reçoit en échange des <strong>nouveaux bitcoins</strong>. C'est comme cela que sont créés, ou minés,
+                    les bitcoins.</li>
+            </ol>
+
+            <div class="callout callout-warning">
+                <span class="callout-title">⚡ Sécurité du réseau</span>
+                Puisque n'importe qui disposant d'un PC peut tenter de résoudre cette équation, le système est
+                entièrement décentralisé. Le réseau est donc pratiquement inattaquable : il est beaucoup plus dur de
+                pirater 5 000 ordinateurs (les mineurs) qu'un seul serveur (dans le cas d'une banque).
+            </div>
+
+            <p>Les forces de la blockchain sont donc l'aspect communautaire et équitable mais surtout son caractère de
+                base de données inviolable car détenue par tous les participants totalement égaux. C'est ce principe de
+                décentralisation qui mène à la révolution de la technologie blockchain et in fine, des cryptomonnaies.
+            </p>
+
+            <div class="callout">
+                <span class="callout-title">💡 Blockchain vs Cryptomonnaie</span>
+                Une blockchain est le réseau qui permet la comptabilité des comptes ainsi que des transactions. C'est
+                donc en quelque sorte le réseau bancaire de la monnaie. La cryptomonnaie, elle, est la valeur monétaire
+                échangée de pair à pair. Il faut bien dissocier la valeur monétaire BTC au réseau Bitcoin, qui
+                caractérise la blockchain Bitcoin.
+            </div>
+
+            <h2>II. Le système de consensus, ou la preuve du réseau</h2>
+
+            <p>Comme évoqué précédemment, les données ancrées sur la blockchain sont vérifiées et prouvées par le
+                réseau. On appelle cela les <strong>méthodes de consensus</strong>. Chaque méthode a ses avantages et
+                ses inconvénients, et il est impossible de dire à l'heure actuelle laquelle est la plus performante.</p>
+
+            <h3>a) Le PoW, Proof of Work (preuve de travail)</h3>
+
+            <p>Le PoW est la première méthode de consensus créée car il s'agit de celle utilisée par la blockchain
+                Bitcoin. Cette méthode utilise le <strong>mining</strong> afin de vérifier et sécuriser le réseau.</p>
+
+            <p>En échange de leur participation pour sécuriser le réseau, les mineurs perçoivent des
+                <strong>rewards</strong> (récompenses) sous forme de bitcoin. C'est ainsi que la création monétaire de
+                la cryptomonnaie se fait.
+            </p>
+
+            <div class="callout">
+                <span class="callout-title">🪙 Comment obtient-on du Bitcoin ?</span>
+                Il n'y a que deux façons : soit en l'achetant à un tiers, soit en l'ayant miné en participant à la
+                sécurisation du réseau. De la même façon que pour l'or : soit vous l'avez trouvé en fouillant une mine,
+                soit vous l'avez acheté à un tiers.
+            </div>
+
+            <p><strong>✅ Avantages du PoW :</strong> L'entière décentralisation qu'apporte ce système. Le fait que de
+                simples particuliers peuvent mettre à disposition leur puissance de calcul permet aux blockchains
+                utilisant ce mode d'être totalement autonomes.</p>
+
+            <p><strong>❌ Inconvénients du PoW :</strong> L'aspect écologique. Puisque pour sécuriser et débloquer de
+                nouveaux tokens, il faut impérativement mettre à disposition la puissance de calcul d'ordinateurs, ce
+                qui crée une surconsommation d'électricité. Cependant, cela reste extrêmement peu comparé à d'autres
+                systèmes de notre quotidien (serveurs Amazon, trajets en avion, production industrielle...).</p>
+
+            <h3>b) Le PoS, Proof of Stake (preuve d'enjeu)</h3>
+
+            <p>Le PoS est un type de consensus qui se répand de plus en plus. Ethereum a passé son réseau du consensus
+                PoW au consensus PoS lors d'une mise à jour en 2022. Avalanche, Cardano, ou Binance Smart Chain
+                utilisent aussi ce système.</p>
+
+            <p>Contrairement au PoW, le PoS ne nécessite pas d'engager la puissance de calcul des mineurs. Les personnes
+                qui sécurisent le réseau sont appelées les <strong>validateurs</strong>. Dans ce mode de consensus, le
+                système choisit aléatoirement de donner la création d'un bloc à ceux qui auront <strong>bloqué leurs
+                    fonds sur le réseau</strong>. C'est ce que l'on appelle le <strong>staking</strong>.</p>
+
+            <div class="callout">
+                <span class="callout-title">🔒 Garantie de bonne conduite</span>
+                Pour garantir que les validateurs ne fassent pas n'importe quoi, les fonds bloqués par ceux-ci peuvent
+                être dissous s'ils essayent de corrompre les transactions. Personne ne prendrait le risque de corrompre
+                un réseau quand ses fonds sont en jeu.
+            </div>
+
+            <p><strong>✅ Avantages du PoS :</strong> L'aspect écologique, car il ne nécessite pas de grande quantité
+                d'électricité afin de sécuriser le réseau.</p>
+
+            <p><strong>❌ Inconvénients du PoS :</strong> Peut se révéler injuste pour les particuliers. Le réseau
+                préférera toujours déléguer la création d'un bloc au validateur qui dispose du plus grand nombre de
+                tokens bloqués, avantageant ainsi les gros investisseurs.</p>
+
+            <h3>c) D'autres types de consensus</h3>
+
+            <p>Bien que moins répandus, d'autres consensus existent :</p>
+            <ul>
+                <li><strong>PoH (Proof of History) :</strong> Preuve d'historique, utilisé par Solana. À ne pas
+                    confondre avec le Proof of Hold.</li>
+                <li><strong>DPoS (Delegated Proof of Stake) :</strong> Preuve d'enjeu délégué, utilisé par BitShare, EOS
+                    ou Linsk.</li>
+                <li><strong>PoI (Proof of Importance) :</strong> Preuve d'importance.</li>
+                <li><strong>PoC (Proof of Capacity) :</strong> Preuve de capacité.</li>
+            </ul>
+
+            <h2>III. Pourquoi tant de blockchains différentes ?</h2>
+
+            <p>Comme dans tout marché, quand une nouvelle technologie prometteuse fait son apparition, des concurrents
+                viennent réclamer leur part du gâteau. Une blockchain peut être faite de différentes manières : le code
+                source peut varier énormément d'une blockchain à une autre.</p>
+
+            <h3>a) Le trilemme des blockchains</h3>
+
+            <p>Un trilemme est un dilemme à 3 possibilités. Les blockchains se doivent d'être optimisées sur trois
+                principaux axes :</p>
+
+            <ul>
+                <li><strong>Scalabilité :</strong> La capacité d'une blockchain à accueillir toujours plus de nouveaux
+                    utilisateurs, sans perdre en performance (sans congestion du réseau).</li>
+                <li><strong>Sécurité :</strong> Tout le système permettant de protéger les données, d'empêcher les hacks
+                    ou toutes autres attaques informatiques.</li>
+                <li><strong>Décentralisation :</strong> Le fait que l'entreprise qui a créé la blockchain n'a pas de
+                    pouvoir décisionnaire ; le système tourne seul car c'est un algorithme qui procède de façon
+                    automatique et autonome.</li>
+            </ul>
+
+            <div class="callout callout-warning">
+                <span class="callout-title">⚖️ Le compromis impossible</span>
+                Pour l'heure, aucune blockchain n'a réussi à optimiser son système sur ces 3 axes simultanément. Si une
+                blockchain est optimisée sur la décentralisation et la sécurité (comme Bitcoin), cela se fait au
+                détriment de la scalabilité. C'est ça le trilemme de la blockchain.
+            </div>
+
+            <h3>b) Les smart contracts et applications décentralisées (DApps)</h3>
+
+            <p>La blockchain Bitcoin a pour seule utilité de régir la cryptomonnaie BTC. Elle ne permet pas la création
+                de ce qu'on appelle les <strong>smart contracts</strong>.</p>
+
+            <p>L'émergence de blockchains permettant la création de smart contracts a été mise en place pour la première
+                fois par <strong>Ethereum</strong>. Grâce à Ethereum, des applications ou projets décentralisés peuvent
+                utiliser le réseau Ethereum pour s'ancrer sur la blockchain.</p>
+
+            <div class="callout">
+                <span class="callout-title">🚀 Pourquoi utiliser Ethereum ?</span>
+                Soit vous créez votre propre blockchain (création, sécurisation, gestion coûteuses), soit vous utilisez
+                directement Ethereum, qui est déjà performante et renommée. Cela fait d'Ethereum un véritable écosystème
+                accueillant de nombreux projets.
+            </div>
+
+            <p>Parmi les blockchains permettant l'émergence de smart contracts : Binance Smart Chain, Avalanche, Solana,
+                Harmony One... Les blockchains Bitcoin ou Cardano ne permettent pas l'émergence d'applications
+                décentralisées (DApps).</p>
+
+            <h3>c) Les DAGs</h3>
+
+            <p>Une cryptomonnaie peut s'émettre sur un autre type de registre qu'on appelle un <strong>DAG</strong>
+                (Directed Acyclic Graph) ou graphe acyclique dirigé.</p>
+
+            <p><strong>Différence principale :</strong> Une blockchain classe les données de façon chronologique et
+                ordonnée, les inscrivant dans un bloc les unes après les autres. Les DAGs fonctionnent différemment : au
+                lieu de créer des blocs, on empile simplement les transactions les unes sur les autres.</p>
+
+            <div class="image-placeholder">
+                <strong>📊 Schéma : Blockchain vs DAG</strong>
+                <img src="Pics/Blockchain_VS_DAG.png"
+                    alt="Graphique TradingView du BTC avec annotation des bougies et mèches"
+                    style="width:100%; border-radius:12px; margin:2rem 0;">
+
+            </div>
+
+            <p><strong>✅ Avantages des DAGs :</strong></p>
+            <ul>
+                <li>Vitesse de traitement plus rapide (pas d'attente de création de bloc)</li>
+                <li>Frais de transaction proches de zéro (pas de mineurs à rémunérer)</li>
+                <li>Consommation d'électricité bien plus basse que les blockchains PoW</li>
+            </ul>
+
+            <p>Bien que très prometteurs, les DAGs sont encore une technologie récente en cours de développement. Parmi
+                les projets utilisant ce type de structure : Fantom (FTM), IOTA, Hedera (HBAR).</p>
+
+            <h2>IV. La transparence</h2>
+
+            <p>La blockchain se distingue du système bancaire par le simple fait de sa <strong>totale
+                    transparence</strong>, vis-à-vis de l'activité émise et plus particulièrement des transactions
+                exécutées sur le réseau.</p>
+
+            <p>Une blockchain est comme un livre ouvert (= un registre) que tout le monde peut consulter afin de
+                vérifier ses transactions, ou bien analyser le trafic que connaît le réseau.</p>
+
+            <div class="callout">
+                <span class="callout-title">🔍 Confidentialité préservée</span>
+                Les utilisateurs d'une blockchain sont caractérisés et identifiables dans le registre seulement par leur
+                <strong>adresse de portefeuille</strong>. Ces adresses se traduisent par une suite de chiffres et de
+                lettres telles que <code>C5KSp0knop894am45cl7554m0nSK</code>. Si l'on ne connaît pas l'adresse de Mr.
+                Dupont, il sera impossible de savoir quelle transaction il a effectuée.
+            </div>
+
+            <h3>🌐 Comment lire dans le registre d'une blockchain ?</h3>
+
+            <p>Des sites dédiés existent, chacun étant propre à une blockchain :</p>
+            <ul>
+                <li>Pour Ethereum : <a href="https://etherscan.io/" target="_blank">https://etherscan.io/</a></li>
+                <li>Pour Bitcoin : <a href="https://btcscan.org/" target="_blank">https://btcscan.org/</a></li>
+                <li>Astuce : recherchez "nom de la blockchain + scan" dans votre moteur de recherche</li>
+            </ul>
+
+            <p>Les blockchains sont pour l'écrasante majorité transparentes, cela casse donc le mythe très connu du
+                blanchiment d'argent car n'importe quelle transaction peut être remontée. Quand vous recevez un bitcoin,
+                vous pouvez donc consulter tout son historique jusqu'à son origine lorsqu'il a été miné.</p>
+
+            <div class="callout callout-warning">
+                <span class="callout-title">⚠️ Blockchains anonymes</span>
+                Il existe des blockchains qui ont pour spécificité de rendre leurs transactions totalement anonymes et
+                rendant inaccessible le registre, notamment <strong>Monero</strong> ou <strong>Zcash</strong>. Ces
+                cryptomonnaies garantissent une totale opacité et donc confidentialité. D'un côté, cela garantit le
+                droit à la vie privée, mais d'un autre côté certains y verront des blockchains obscures. La plupart des
+                blockchains fonctionnent sur un système de <strong>pseudonyme</strong> (votre adresse de portefeuille)
+                et non pas anonyme.
+            </div>
+
+        </article>
+
+        <nav class="chapter-nav">
+            <a href="chapitre-01.html" class="nav-btn">
+                <span class="nav-label">← Chapitre précédent</span>
+                <span class="nav-title">Les cryptomonnaies</span>
+            </a>
+            <a href="chapitre-03.html" class="nav-btn next">
+                <span class="nav-label">Chapitre suivant →</span>
+                <span class="nav-title">L'interopérabilité</span>
+            </a>
+        </nav>
+    </main>
+
+    <script>
+        // Barre de progression de lecture
+        window.onscroll = function () {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById("progressBar").style.width = scrolled + "%";
+        };
+
+        // Menu mobile
+        const toggle = document.querySelector('.mobile-toggle');
+        const nav = document.querySelector('.nav-links');
+        if (toggle) toggle.addEventListener('click', () => nav.classList.toggle('active'));
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => nav.classList.remove('active'));
+        });
+    </script>
+</body>
+
+</html>
